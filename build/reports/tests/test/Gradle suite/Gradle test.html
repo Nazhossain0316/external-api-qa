@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 05 12:26:47 EDT 2022</td>
+<td>Started on:</td><td>Wed Jul 06 11:57:48 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (25 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (383 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.automation.api.tests.ImpactApiTests.loadProperties()'><b>loadProperties</b><br>Test class: com.automation.api.tests.ImpactApiTests</td>
-<td><div><pre>java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at com.automation.api.tests.TestBase.loadProperties(TestBase.java:23)
+<td title='com.automation.api.tests.ImpactTests.setUp()'><b>setUp</b><br>Test class: com.automation.api.tests.ImpactTests</td>
+<td><div><pre>java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:18)
+	at com.automation.api.tests.ImpactTests.setUp(ImpactTests.java:31)
 	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1696263571", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1696263571'><pre>java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+Caused by: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
 	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
 	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at com.automation.api.tests.TestBase.loadProperties(TestBase.java:23)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:16)
+	... 38 more
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1652764753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1652764753'><pre>java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:18)
+	at com.automation.api.tests.ImpactTests.setUp(ImpactTests.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -125,27 +127,15 @@ function toggleAllBoxes() {
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:16)
+	... 38 more
 </pre></div></td>
 <td>0</td>
-<td>com.automation.api.tests.ImpactApiTests@51bf5add</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.automation.api.tests.ImpactApiTests.setUrls()'><b>setUrls</b><br>Test class: com.automation.api.tests.ImpactApiTests</td>
-<td></td>
-<td>-1657038407</td>
-<td>com.automation.api.tests.ImpactApiTests@51bf5add</td></tr>
-<tr>
-<td title='com.automation.api.tests.ImpactApiTests.createAccessToken()'><b>createAccessToken</b><br>Test class: com.automation.api.tests.ImpactApiTests</td>
-<td></td>
-<td>-1657038407</td>
-<td>com.automation.api.tests.ImpactApiTests@51bf5add</td></tr>
+<td>com.automation.api.tests.ImpactTests@75c56eb9</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -155,19 +145,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.automation.api.tests.ImpactApiTests.makeRequest()'><b>makeRequest</b><br>Test class: com.automation.api.tests.ImpactApiTests</td>
-<td><div><pre>java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at com.automation.api.tests.TestBase.loadProperties(TestBase.java:23)
+<td title='com.automation.api.tests.ImpactTests.makeRequest()'><b>makeRequest</b><br>Test class: com.automation.api.tests.ImpactTests</td>
+<td><div><pre>java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:18)
+	at com.automation.api.tests.ImpactTests.setUp(ImpactTests.java:31)
 	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1634387050", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1634387050'><pre>java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+Caused by: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
 	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
 	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at com.automation.api.tests.TestBase.loadProperties(TestBase.java:23)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:16)
+	... 38 more
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1533547487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1533547487'><pre>java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:18)
+	at com.automation.api.tests.ImpactTests.setUp(ImpactTests.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -205,9 +197,15 @@ function toggleAllBoxes() {
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:16)
+	... 38 more
 </pre></div></td>
 <td>0</td>
-<td>com.automation.api.tests.ImpactApiTests@51bf5add</td></tr>
+<td>com.automation.api.tests.ImpactTests@75c56eb9</td></tr>
 </table><p>
 </body>
 </html>

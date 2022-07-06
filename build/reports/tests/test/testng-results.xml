@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-05T12:26:47 EDT" name="Gradle suite" finished-at="2022-07-05T12:26:47 EDT" duration-ms="25">
+  <suite started-at="2022-07-06T11:57:48 EDT" name="Gradle suite" finished-at="2022-07-06T11:57:49 EDT" duration-ms="383">
     <groups>
     </groups>
-    <test started-at="2022-07-05T12:26:47 EDT" name="Gradle test" finished-at="2022-07-05T12:26:47 EDT" duration-ms="25">
-      <class name="com.automation.api.tests.ImpactApiTests">
-        <test-method is-config="true" signature="loadProperties()[pri:0, instance:com.automation.api.tests.ImpactApiTests@51bf5add]" started-at="2022-07-05T12:26:47 EDT" name="loadProperties" finished-at="2022-07-05T12:26:47 EDT" duration-ms="4" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
+    <test started-at="2022-07-06T11:57:48 EDT" name="Gradle test" finished-at="2022-07-06T11:57:49 EDT" duration-ms="383">
+      <class name="com.automation.api.tests.ImpactTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.api.tests.ImpactTests@75c56eb9]" started-at="2022-07-06T11:57:48 EDT" name="setUp" finished-at="2022-07-06T11:57:48 EDT" duration-ms="17" status="FAIL">
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)]]>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at com.automation.api.tests.TestBase.loadProperties(TestBase.java:23)
+              <![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:18)
+at com.automation.api.tests.ImpactTests.setUp(ImpactTests.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,27 +53,27 @@ at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.c
 at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadProperties -->
-        <test-method is-config="true" signature="setUrls()[pri:0, instance:com.automation.api.tests.ImpactApiTests@51bf5add]" started-at="2022-07-05T12:26:47 EDT" name="setUrls" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1657038407917" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUrls -->
-        <test-method signature="makeRequest()[pri:0, instance:com.automation.api.tests.ImpactApiTests@51bf5add]" started-at="2022-07-05T12:26:47 EDT" name="makeRequest" finished-at="2022-07-05T12:26:47 EDT" duration-ms="0" status="SKIP">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+Caused by: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
 at java.base/java.io.FileInputStream.open0(Native Method)
 at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at com.automation.api.tests.TestBase.loadProperties(TestBase.java:23)
+at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:16)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="makeRequest(java.util.Map)[pri:0, instance:com.automation.api.tests.ImpactTests@75c56eb9]" started-at="2022-07-06T11:57:49 EDT" name="makeRequest" data-provider="impact_meter_data" finished-at="2022-07-06T11:57:49 EDT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:18)
+at com.automation.api.tests.ImpactTests.setUp(ImpactTests.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,17 +111,19 @@ at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.c
 at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:16)
+... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- makeRequest -->
-        <test-method is-config="true" signature="createAccessToken()[pri:0, instance:com.automation.api.tests.ImpactApiTests@51bf5add]" started-at="2022-07-05T12:26:47 EDT" name="createAccessToken" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1657038407924" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAccessToken -->
-      </class> <!-- com.automation.api.tests.ImpactApiTests -->
+      </class> <!-- com.automation.api.tests.ImpactTests -->
     </test> <!-- Gradle test -->
   </suite> <!-- Gradle suite -->
 </testng-results>

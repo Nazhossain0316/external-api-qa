@@ -3,14 +3,12 @@
 <suite name="Failed suite [Gradle suite]" verbose="0">
   <test thread-count="5" name="Gradle test(failed)" verbose="0">
     <classes>
-      <class name="com.automation.api.tests.ImpactApiTests">
+      <class name="com.automation.api.tests.ImpactTests">
         <methods>
-          <include name="createAccessToken"/>
-          <include name="setUrls"/>
           <include name="makeRequest"/>
-          <include name="loadProperties"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.automation.api.tests.ImpactApiTests -->
+      </class> <!-- com.automation.api.tests.ImpactTests -->
     </classes>
   </test> <!-- Gradle test(failed) -->
 </suite> <!-- Failed suite [Gradle suite] -->

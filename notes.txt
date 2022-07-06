@@ -1,0 +1,10 @@
+    Reference DOc: https://crownequipmentcorporation.sharepoint.com/sites/InfoLinkProductDevelopment/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FInfoLinkProductDevelopment%2FShared%20Documents%2FProjects%20and%20Initiatives%2FS2199%20InfoLink%20API%20Platform%2FIL6%20API%20RFP%2FRFP%20%2D%20InfoLink%20Customer%20APIs%20%28Sept%202021%29%20%2Epdf&parent=%2Fsites%2FInfoLinkProductDevelopment%2FShared%20Documents%2FProjects%20and%20Initiatives%2FS2199%20InfoLink%20API%20Platform%2FIL6%20API%20RFP&p=true&ga=1
+
+
+    //** Customers want to view all equipmentthat has had a high impact since X date.
+    //•Customers want to knowthetop X operatorsthat have had high impacts since X date.
+    //•Customers want to know whichtruck type has had thehighestnumber of impacts.
+    //•Customers want to know whichlocation has had the most impacts.
+    //•Customers want to know what equipment had an impact and why.
+    //•Customers want to know the speed my equipment was going at the time of impact.
+    //•Customers want to know the cause of the impact.•Customers want to know where in the facility the impact occurred.

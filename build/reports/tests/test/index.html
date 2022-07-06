@@ -102,7 +102,7 @@
                     <div class="method-list-content skipped suite-Gradle_suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Gradle_suite" title="com.automation.api.tests.ImpactApiTests" class="method navigator-link" hash-for-method="makeRequest">makeRequest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Gradle_suite" title="com.automation.api.tests.ImpactTests" class="method navigator-link" hash-for-method="makeRequest">makeRequest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Gradle_suite -->
@@ -120,7 +120,7 @@
           <div class="suite-Gradle_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">com.automation.api.tests.ImpactApiTests</span>
+              <span class="class-name">com.automation.api.tests.ImpactTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -128,12 +128,16 @@
                   <a name="makeRequest">
                   </a> <!-- makeRequest -->
                   <span class="method-name">makeRequest</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+                  <div class="stack-trace">java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:18)
+	at com.automation.api.tests.ImpactTests.setUp(ImpactTests.java:31)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+Caused by: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
 	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
 	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at com.automation.api.tests.TestBase.loadProperties(TestBase.java:23)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:16)
+	... 38 more
 ... Removed 36 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -151,8 +155,7 @@
 &lt;suite name=&quot;Gradle suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Gradle test&quot; verbose=&quot;0&quot; preserve-order=&quot;false&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.automation.api.tests.ImpactApiTests&quot;/&gt;
-      &lt;class name=&quot;com.automation.api.tests.TestBase&quot;/&gt;
+      &lt;class name=&quot;com.automation.api.tests.ImpactTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Gradle test --&gt;
 &lt;/suite&gt; &lt;!-- Gradle suite --&gt;
@@ -166,7 +169,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Gradle test (2 classes)</span>
+                <span class="test-name">Gradle test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,7 +198,7 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'makeRequest')
-data.setCell(0, 2, 'com.automation.api.tests.ImpactApiTests')
+data.setCell(0, 2, 'com.automation.api.tests.ImpactTests')
 data.setCell(0, 3, 0);
 window.suiteTableData['Gradle_suite']= { tableData: data, tableDiv: 'times-div-Gradle_suite'}
 return data;
@@ -216,16 +219,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Gradle_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.automation.api.tests.TestBase</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">loadProperties</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Gradle_suite" class="panel">
@@ -234,24 +230,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automation.api.tests.ImpactApiTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.automation.api.tests.ImpactTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">loadProperties</span>
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-class before">
-                <span class="method-name">setUrls</span>
-                <span class="method-start">21 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">createAccessToken</span>
-                <span class="method-start">28 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">makeRequest</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">400 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

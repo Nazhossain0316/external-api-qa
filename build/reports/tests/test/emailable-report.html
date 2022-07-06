@@ -9,25 +9,31 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Gradle suite</th></tr>
-<tr><td><a href="#t0">Gradle test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">25</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Gradle test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">383</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Gradle suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Gradle test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.automation.api.tests.ImpactApiTests</td><td><a href="#m0">loadProperties</a></td><td rowspan="1">1657038407896</td><td rowspan="1">4</td></tr><tr><th colspan="4">Gradle test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">com.automation.api.tests.ImpactApiTests</td><td><a href="#m1">createAccessToken</a></td><td rowspan="1">1657038407924</td><td rowspan="1">-1657038407924</td></tr><tr class="skippedeven"><td><a href="#m2">setUrls</a></td><td rowspan="1">1657038407917</td><td rowspan="1">-1657038407917</td></tr><tr><th colspan="4">Gradle test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.automation.api.tests.ImpactApiTests</td><td><a href="#m3">makeRequest</a></td><td rowspan="1">1657038407924</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Gradle suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Gradle test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.automation.api.tests.ImpactTests</td><td><a href="#m0">setUp</a></td><td rowspan="1">1657123068918</td><td rowspan="1">17</td></tr><tr><th colspan="4">Gradle test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.automation.api.tests.ImpactTests</td><td><a href="#m1">makeRequest</a></td><td rowspan="1">1657123069318</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Gradle test</h2><h3 id="m0">com.automation.api.tests.ImpactApiTests#loadProperties</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+<h2>Gradle test</h2><h3 id="m0">com.automation.api.tests.ImpactTests#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:18)
+	at com.automation.api.tests.ImpactTests.setUp(ImpactTests.java:31)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+Caused by: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
 	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
 	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at com.automation.api.tests.TestBase.loadProperties(TestBase.java:23)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:16)
+	... 38 more
 ... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.automation.api.tests.ImpactApiTests#createAccessToken</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.automation.api.tests.ImpactApiTests#setUrls</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.automation.api.tests.ImpactApiTests#makeRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+<h3 id="m1">com.automation.api.tests.ImpactTests#makeRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:18)
+	at com.automation.api.tests.ImpactTests.setUp(ImpactTests.java:31)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+Caused by: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
 	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
 	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at com.automation.api.tests.TestBase.loadProperties(TestBase.java:23)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:16)
+	... 38 more
 ... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

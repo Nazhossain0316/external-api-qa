@@ -29,9 +29,9 @@ public class TestBase {
             System.setProperty(name, value);
         }
 
-        apiKey = System.getProperty("apiKey");
-        authUrl = System.getProperty("authUrl");
-        clientId = System.getProperty("clientId");
-        clientSecret = System.getProperty("clientSecret");
+//        apiKey = System.getProperty("apiKey");
+//        authUrl = System.getProperty("authUrl");
+//        clientId = System.getProperty("clientId");
+//        clientSecret = System.getProperty("clientSecret");
     }
 }

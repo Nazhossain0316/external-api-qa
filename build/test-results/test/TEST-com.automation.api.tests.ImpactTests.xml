@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.automation.api.tests.ImpactApiTests" tests="2" skipped="1" failures="1" errors="0" timestamp="2022-07-05T16:26:47" hostname="HSNKFB3" time="0.028">
+<testsuite name="com.automation.api.tests.ImpactTests" tests="2" skipped="1" failures="1" errors="0" timestamp="2022-07-06T15:57:48" hostname="HSNKFB3" time="0.4">
   <properties/>
-  <testcase name="loadProperties" classname="com.automation.api.tests.ImpactApiTests" time="0.004">
-    <failure message="java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)" type="java.io.FileNotFoundException">java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at com.automation.api.tests.TestBase.loadProperties(TestBase.java:23)
+  <testcase name="setUp" classname="com.automation.api.tests.ImpactTests" time="0.017">
+    <failure message="java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)" type="java.lang.RuntimeException">java.lang.RuntimeException: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:18)
+	at com.automation.api.tests.ImpactTests.setUp(ImpactTests.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -44,9 +42,15 @@
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.io.FileNotFoundException: C:\Users\NazmulHossain\Projects\external-api-qa\src\test\resources\null.properties (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
+	at com.automation.api.utils.Properties.loadPropertiesFile(Properties.java:16)
+	... 38 more
 </failure>
   </testcase>
-  <testcase name="makeRequest" classname="com.automation.api.tests.ImpactApiTests" time="0.0">
+  <testcase name="makeRequest" classname="com.automation.api.tests.ImpactTests" time="0.0">
     <skipped/>
   </testcase>
   <system-out><![CDATA[]]></system-out>
