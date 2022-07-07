@@ -8,7 +8,6 @@ import java.util.Map;
 
 public class Authorization {
 
-
     public static String getAuthorizationToken (String clientId, String clientSecret){
         Map<String, String> authHeaders = new HashMap<>();
 

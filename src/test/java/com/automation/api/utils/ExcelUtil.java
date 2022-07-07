@@ -59,7 +59,6 @@ public class ExcelUtil {
         return  obj;
     }
 
-
     private static int getNumberOfTestsTurnedOn( XSSFSheet sheet){
 
         DataFormatter fmt = new DataFormatter();
@@ -76,9 +75,12 @@ public class ExcelUtil {
                 numberOfTestCasesTurnedOn++;
             }
         }
-
         return numberOfTestCasesTurnedOn;
-
     }
 
+    public static void createSystemPropertiesFromDataSource(Map<Object, Object> dataSource) {
+        for (Map.Entry<Object,Object> entry : dataSource.entrySet()){
+            System.setProperty(entry.getKey().toString(),entry.getValue().toString());
+        }
+    }
 }
