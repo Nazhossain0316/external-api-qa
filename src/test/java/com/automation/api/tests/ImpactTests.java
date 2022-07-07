@@ -40,12 +40,10 @@ public class ImpactTests {
     }
 
     @Test(dataProvider = "impact_meter_data")
-    public void makeRequest(Map<Object, Object> dataSource) {
-        //todo: create method that will assign all excel data to System properties
+    public void restController_impacts(Map<Object, Object> dataSource) {
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
 
         String authToken = Authorization.getAuthorizationToken(clientId, clientSecret);
-
         String impactApiRequestUrl = baseUrl + dataSource.get("Uri").toString();
 
         Map<String, String> requestHeaders = new HashMap<>();
@@ -56,6 +54,5 @@ public class ImpactTests {
 
         assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
     }
-
 
 }

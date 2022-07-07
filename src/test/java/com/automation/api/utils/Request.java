@@ -42,7 +42,6 @@ public class Request {
                 break;
         }
 
-
         String currentTestCase = System.getProperty("Description");
         Reporter.log("\nTestCase:\n" + currentTestCase);
         Reporter.log(" ");
