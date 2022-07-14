@@ -2548,3 +2548,54 @@
         }
     }
 ]
+[
+    
+]
+{
+    "errorType": "INVALID",
+"    "entity": "impactApiRequest",
+    "fieldErrors": [
+
+        {
+%            "errorCode": "REQUIRED",
+!            "field": "startDate"
+
+        }
+    ]
+}
+{
+    "errorType": "INVALID",
+"    "entity": "impactApiRequest",
+    "fieldErrors": [
+
+        {
+%            "errorCode": "REQUIRED",
+            "field": "endDate"
+
+        }
+    ]
+}
+[
+    {
+:        "userId": "f4095042-56a5-4699-a32b-b645c166a09a",
+         "lastLoginTimestamp": {
+8            "dateTime": "2022-01-20T14:05:35.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "7c1026e8-0e1f-47a1-8259-78570ada53dd",
+         "lastLoginTimestamp": {
+8            "dateTime": "2022-04-01T14:44:08.000+0000",
+            "zone": "UTC"
+
+        }
+    }
+]
+[
+    {
+:        "userId": "f4095042-56a5-4699-a32b-b645c166a09a",
+>        "equipmentId": "d9567de0-afa2-313e-82b7-218703ce23bc"
+    }
+]

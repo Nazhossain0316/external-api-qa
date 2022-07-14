@@ -3,7 +3,6 @@ package com.automation.api.tests.impact;
 import com.automation.api.tests.TestBase;
 import com.automation.api.utils.*;
 import io.restassured.response.Response;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -16,12 +15,11 @@ import static org.testng.Assert.assertTrue;
 
 public class ImpactTests extends TestBase {
 
-    @DataProvider(name = "ImpactData_1")
+    @DataProvider(name = "get_impacts_v1_impacts")
     public Object[][] impactMeterData_1() {
         return ExcelUtil.dataSupplier(System.getProperty("user.dir") +
-                "/src/test/resources/data/Impact.xlsx", "ImpactData_1");
+                "/src/test/resources/data/Impact.xlsx", "GET_impacts_v1_impacts");
     }
-
 
     @DataProvider(name = "ImpactData_2")
     public Object[][] impactMeterData_2() {
@@ -29,8 +27,8 @@ public class ImpactTests extends TestBase {
                 "/src/test/resources/data/Impact.xlsx", "ImpactData_2");
     }
 
-    @Test(dataProvider = "ImpactData_1")
-    public void makeGetRequest(Map<Object, Object> dataSource) {
+    @Test(dataProvider = "get_impacts_v1_impacts")
+    public void get_impacts_v1_impacts(Map<Object, Object> dataSource) {
         //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
 
@@ -58,7 +56,7 @@ public class ImpactTests extends TestBase {
 
         //check if preReq step exist in datasource
         if(!System.getProperty("preRequisite").equals("")){
-            PrerequisiteHelper.setPrerequisites(System.getProperty("preRequisite"));
+            PrerequisiteHelper.initializePrerequisiteData(System.getProperty("preRequisite"));
         }
 
         //Get Authorization Token
@@ -80,5 +78,4 @@ public class ImpactTests extends TestBase {
 
         assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
     }
-
 }
