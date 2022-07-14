@@ -1,0 +1,84 @@
+package com.automation.api.tests.impact;
+
+import com.automation.api.tests.TestBase;
+import com.automation.api.utils.*;
+import io.restassured.response.Response;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+
+public class ImpactTests extends TestBase {
+
+    @DataProvider(name = "ImpactData_1")
+    public Object[][] impactMeterData_1() {
+        return ExcelUtil.dataSupplier(System.getProperty("user.dir") +
+                "/src/test/resources/data/Impact.xlsx", "ImpactData_1");
+    }
+
+
+    @DataProvider(name = "ImpactData_2")
+    public Object[][] impactMeterData_2() {
+        return ExcelUtil.dataSupplier(System.getProperty("user.dir") +
+                "/src/test/resources/data/Impact.xlsx", "ImpactData_2");
+    }
+
+    @Test(dataProvider = "ImpactData_1")
+    public void makeGetRequest(Map<Object, Object> dataSource) {
+        //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
+        ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
+
+        //Get Authorization Token
+        String authToken = Authorization.getAuthorizationToken(clientId, clientSecret);
+
+        //Set Auth Token as Header
+        Map<String, String> requestHeaders = new HashMap<>();
+        requestHeaders.put("Authorization", "Bearer " + authToken);
+
+        String impactApiRequestUrl = baseUrl + dataSource.get("Uri").toString();
+
+        Response response = Request.makeRequest("GET", impactApiRequestUrl, requestHeaders, "");
+        String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
+
+        assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
+    }
+
+
+    //@Test(dataProvider = "ImpactData_2")
+    public void makeGetRequest_2(Map<Object, Object> dataSource) {
+        //ToDo: Test Case work still remians. This test case require DB integration (which is currently pending)
+        //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
+        ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
+
+        //check if preReq step exist in datasource
+        if(!System.getProperty("preRequisite").equals("")){
+            PrerequisiteHelper.setPrerequisites(System.getProperty("preRequisite"));
+        }
+
+        //Get Authorization Token
+        String authToken = Authorization.getAuthorizationToken(clientId, clientSecret);
+
+        //Set Auth Token as Header
+        Map<String, String> requestHeaders = new HashMap<>();
+        requestHeaders.put("Authorization", "Bearer " + authToken);
+
+        //Set request URL
+        String impactApiRequestUrl = baseUrl + dataSource.get("Uri").toString();
+
+        //If ModuleGuid was created in the prerequisite step, it can be retrieved using System.getProperty("moduleGuid")
+        String moduleGuid = System.getProperty("moduleGuid");
+        impactApiRequestUrl =impactApiRequestUrl.contains("{moduleGuid}") ? impactApiRequestUrl.replace("{moduleGuid}", moduleGuid): impactApiRequestUrl;
+
+        Response response = Request.makeRequest("GET", impactApiRequestUrl, requestHeaders, "");
+        String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
+
+        assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
+    }
+
+}

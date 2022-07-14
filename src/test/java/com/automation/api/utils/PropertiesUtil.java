@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class Properties {
+public class PropertiesUtil {
 
     public static void loadPropertiesFile() {
         File src = new File(System.getProperty("user.dir") +

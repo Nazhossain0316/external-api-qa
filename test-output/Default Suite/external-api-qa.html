@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>external-api-qa</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 07 10:56:18 EDT 2022</td>
+<td>Started on:</td><td>Thu Jul 14 14:16:51 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3292 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4928 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,98 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.automation.api.tests.ImpactTests.makeRequest()'><b>makeRequest</b><br>Test class: com.automation.api.tests.ImpactTests<br>Parameters: {ExpectedStatusCode=400, preRequisites=, Description=Get impacts for invalid Date Range, FieldValidations=, Run=Y, TCID=2, Uri=impacts/v1/impacts?startDate=2023-5-1&endDate=2024-5-1, Body=, HttpMethod=GET, ExpectedResponseBody=}<br/>
-<a href="#Output-1685820260" onClick='toggleBox("Output-1685820260", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1685820260" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1685820260">
-
-TestCase:
-Get impacts for invalid Date Range<br/>
- <br/>
-
-REQUEST Method:
-GET<br/>
- <br/>
-
-REQUEST url:
-https://api.zone1.development.crown.com/impacts/v1/impacts?startDate=2023-5-1&endDate=2024-5-1<br/>
- <br/>
-
-REQUEST Headers:
-{Authorization=Bearer eyJraWQiOiJkMWJlN2EzZjE1Y2ZkNjg5NGIxN2ZmNWVmNjczNTRhYzU1YzkzYTFmZDFlNjg5NmVhYTlkN2QxNDMzODEwOWI4IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1OTUyNCIsInpvbmVpbmZvIjoiQW1lcmljYVwvTmV3X1lvcmsiLCJpc3MiOiJodHRwczpcL1wvYXV0aC56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJsb2NhbGUiOiJlbiIsImp3dFR5cGUiOiJBUEkiLCJjbGllbnRfaWQiOiIzZWJhNTY3YS0yYWRjLTRiZjQtYjE4ZS01NmM5MGUwZmNhZTgiLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL2N1c3RvbWVyU2VsZWN0ZWQiOmZhbHNlLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VvbSI6Ik1FVFJJQyIsInVvbSI6Ik1FVFJJQyIsImN1c3RvbWVySWQiOjE4MiwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9lbWFpbCI6ImVkZGllLmxlZ2crMUBsZWFkaW5nZWRqZS5jb20iLCJleHAiOjE2NTcyMjAxNzgsImlhdCI6MTY1NzIwNTc3OCwiZW1haWwiOiJlZGRpZS5sZWdnKzFAbGVhZGluZ2VkamUuY29tIiwianRpIjoiOWU4ODllYmEtMGZkYS00N2MxLWI0YWYtMGQzZDNlZWU1NTUxIiwiYXBwcyI6WyJ0d293YXktbWVzc2FnZSIsImRldmVsb3Blci1wb3J0YWwiLCJwZW9wbGUiXSwic2NwIjpbImlsNjpnbG9iYWwiXSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9jdXN0b21lcklkIjoxODIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvbG9jYWxlIjoiZW4iLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VzZXJUeXBlIjoiVVNFUiIsImF1ZCI6ImFwaS56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJjdXN0b21lclNlbGVjdGVkIjpmYWxzZSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC91c2VySWQiOiI1OTUyNCIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvand0VHlwZSI6IkFQSSIsInVzZXJUeXBlIjoiVVNFUiIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvem9uZWluZm8iOiJBbWVyaWNhXC9OZXdfWW9yayJ9.VPwjPJLE3N3h8T6bnlctKMpfjbigLEk7yiDUNTBorKuQi19vK8Qg09JCFyP5LmtXud2CQAQUGqF7RIj0zhf0aQJ65J4Ksj00_3GXBVA12Ta2edz5GoctwM7mDKedeNGZOZCUsgPf7Ed4lDgIz6dtWaFrI2mLCgEgxfgvoAwuqQvm9h5K7FU_G-EPfCkh4duKu_v4xGrRALmJi15zCodVzn1xWTyd38Gi7uDxTZy4ZHn4af3UsRtTC6FQ3K59ovQfJAJEGR1TS2KoogE_gFN1nf7r64KFTwQfLpz-Rp6jhnQb_Xx5tB1G06GePH2R8ArjtC6VUfIltpMTQ82PHqEqQA}<br/>
- <br/>
-
-REQUEST Body:
-<br/>
- <br/>
- <br/>
-
-RESPONSE code:
-200<br/>
- <br/>
-
-RESPONSE body:
-[
-    
-]<br/>
- <br/>
-
-RESPONSE time (ms):
-354<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: The response code did not match expected expected [400] but found [200]
-	at com.automation.api.tests.ImpactTests.makeRequest(ImpactTests.java:57)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1685820260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1685820260'><pre>java.lang.AssertionError: The response code did not match expected expected [400] but found [200]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at com.automation.api.tests.ImpactTests.makeRequest(ImpactTests.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</pre></div></td>
-<td>0</td>
-<td>com.automation.api.tests.ImpactTests@5e0826e7</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -167,11 +75,11 @@ RESPONSE time (ms):
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.automation.api.tests.ImpactTests.makeRequest()'><b>makeRequest</b><br>Test class: com.automation.api.tests.ImpactTests<br>Parameters: {ExpectedStatusCode=200, preRequisites=, Description=Get impacts for Date Range, FieldValidations=, Run=Y, TCID=1, Uri=impacts/v1/impacts?startDate=2020-5-1&endDate=2022-5-1, Body=, HttpMethod=GET, ExpectedResponseBody=}<br/>
-<a href="#Output-273077527" onClick='toggleBox("Output-273077527", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.automation.api.tests.impact.ImpactTests.makeGetRequest()'><b>makeGetRequest</b><br>Test class: com.automation.api.tests.impact.ImpactTests<br>Parameters: {ExpectedStatusCode=200, preRequisites=, Description=Get impacts for Date Range, FieldValidations=, Run=Y, TCID=1, Uri=/impacts/v1/impacts?startDate=2020-5-1&endDate=2022-5-1, Body=, HttpMethod=GET, ExpectedResponseBody=(Not Supported currently)}<br/>
+<a href="#Output-2050370411" onClick='toggleBox("Output-2050370411", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-273077527" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-273077527">
+<a href="#Output-2050370411" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2050370411">
 
 TestCase:
 Get impacts for Date Range<br/>
@@ -186,7 +94,7 @@ https://api.zone1.development.crown.com/impacts/v1/impacts?startDate=2020-5-1&en
  <br/>
 
 REQUEST Headers:
-{Authorization=Bearer eyJraWQiOiJkMWJlN2EzZjE1Y2ZkNjg5NGIxN2ZmNWVmNjczNTRhYzU1YzkzYTFmZDFlNjg5NmVhYTlkN2QxNDMzODEwOWI4IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1OTUyNCIsInpvbmVpbmZvIjoiQW1lcmljYVwvTmV3X1lvcmsiLCJpc3MiOiJodHRwczpcL1wvYXV0aC56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJsb2NhbGUiOiJlbiIsImp3dFR5cGUiOiJBUEkiLCJjbGllbnRfaWQiOiIzZWJhNTY3YS0yYWRjLTRiZjQtYjE4ZS01NmM5MGUwZmNhZTgiLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL2N1c3RvbWVyU2VsZWN0ZWQiOmZhbHNlLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VvbSI6Ik1FVFJJQyIsInVvbSI6Ik1FVFJJQyIsImN1c3RvbWVySWQiOjE4MiwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9lbWFpbCI6ImVkZGllLmxlZ2crMUBsZWFkaW5nZWRqZS5jb20iLCJleHAiOjE2NTcyMjAxNzcsImlhdCI6MTY1NzIwNTc3NywiZW1haWwiOiJlZGRpZS5sZWdnKzFAbGVhZGluZ2VkamUuY29tIiwianRpIjoiOTA1YmMyYTMtY2QwMS00ZTNjLTgyNDEtMTVhYjY3ZmVjZWRjIiwiYXBwcyI6WyJ0d293YXktbWVzc2FnZSIsImRldmVsb3Blci1wb3J0YWwiLCJwZW9wbGUiXSwic2NwIjpbImlsNjpnbG9iYWwiXSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9jdXN0b21lcklkIjoxODIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvbG9jYWxlIjoiZW4iLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VzZXJUeXBlIjoiVVNFUiIsImF1ZCI6ImFwaS56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJjdXN0b21lclNlbGVjdGVkIjpmYWxzZSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC91c2VySWQiOiI1OTUyNCIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvand0VHlwZSI6IkFQSSIsInVzZXJUeXBlIjoiVVNFUiIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvem9uZWluZm8iOiJBbWVyaWNhXC9OZXdfWW9yayJ9.hij7sDsdF2M9e5qjMQEz9FWiTwHxsn4KzjKMyxefD4pvssQgW6fruJH2CeGh9uiS0HSOxHHsYDE0zLs6eHqTYGmFn_pAo4lwmRfwrX48sVxz5uK2yPtBkG5gUgHReSdBq5QeLFtX7fnbDQTxiy5rcCbfkh00wiqyV42xkvRl933CV6_lIvqjZmXm_U9jRUV9ZVf-WBUP8htIFb4l448vWq575nbKsXk83HQP5f6lXqcaW3LUuBeSFjqUNhR4sHpjoaL-YmJh7rrSo1xMCnu2Z6hapQH48BI1nmC6WKPlj2zFOBMoqI6bv7NIosoxh4ZPFjEF8xOmw0EXtQ6o90RJkw}<br/>
+{Authorization=Bearer eyJraWQiOiI2ZmM5ZjAzNTBhNjcxMWZhMDNmODAyMzA0ZWE5YTEwZmEzZTMyYzI4MWRiM2JmODBiMDg2ZmFiNTIxMTVlNmRhIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1OTUyNCIsInpvbmVpbmZvIjoiQW1lcmljYVwvTmV3X1lvcmsiLCJpc3MiOiJodHRwczpcL1wvYXV0aC56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJsb2NhbGUiOiJlbiIsImp3dFR5cGUiOiJBUEkiLCJjbGllbnRfaWQiOiIzZWJhNTY3YS0yYWRjLTRiZjQtYjE4ZS01NmM5MGUwZmNhZTgiLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL2N1c3RvbWVyU2VsZWN0ZWQiOmZhbHNlLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VvbSI6Ik1FVFJJQyIsInVvbSI6Ik1FVFJJQyIsImN1c3RvbWVySWQiOjE4MiwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9lbWFpbCI6ImVkZGllLmxlZ2crMUBsZWFkaW5nZWRqZS5jb20iLCJleHAiOjE2NTc4MzcwMTMsImlhdCI6MTY1NzgyMjYxMywiZW1haWwiOiJlZGRpZS5sZWdnKzFAbGVhZGluZ2VkamUuY29tIiwianRpIjoiZGJlNTExOTQtYmRhYS00YWE1LTg3MzYtNGI3MjY4YzliZGVjIiwiYXBwcyI6WyJ0d293YXktbWVzc2FnZSIsImRldmVsb3Blci1wb3J0YWwiLCJwZW9wbGUiXSwic2NwIjpbImlsNjpnbG9iYWwiXSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9jdXN0b21lcklkIjoxODIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvbG9jYWxlIjoiZW4iLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VzZXJUeXBlIjoiVVNFUiIsImF1ZCI6ImFwaS56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJjdXN0b21lclNlbGVjdGVkIjpmYWxzZSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC91c2VySWQiOiI1OTUyNCIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvand0VHlwZSI6IkFQSSIsInVzZXJUeXBlIjoiVVNFUiIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvem9uZWluZm8iOiJBbWVyaWNhXC9OZXdfWW9yayJ9.r2a5qZCHra-PHP24_5hz-LK912tU749hUsQgI0qZYL1Ydn8GLDEJNt6e8nBsaggRwsnOVU92Ouxk--atcHDk-urKHp-93KFvm_dU-2TOfbVOsOBgt7sgDyI4kuQkqgbRb-mUV7-dC6L3OZrQ4Mw8poNZpkOtaIlB62MBhqMndzHewrwIAOqN0tL0JODKpFupK1TiJwGhgxVcR6jIXjM4zs6tJiDfIGky3rEObehjEqrkHLYs2v_sD-Tv1Ov0HgxUlVSvD6o87YM7kd2dpe06jjz5mWWCFhYPdIbj3aXf42qwsc8fnCR6xPXtxKVmhLGRf1c4pCo_QeGuzsU6w3R4pg}<br/>
  <br/>
 
 REQUEST Body:
@@ -2652,12 +2560,161 @@ RESPONSE body:
  <br/>
 
 RESPONSE time (ms):
-549<br/>
+1030<br/>
 </div>
 </td>
 <td></td>
 <td>2</td>
-<td>com.automation.api.tests.ImpactTests@5e0826e7</td></tr>
+<td>com.automation.api.tests.impact.ImpactTests@71809907</td></tr>
+<tr>
+<td title='com.automation.api.tests.impact.ImpactTests.makeGetRequest()'><b>makeGetRequest</b><br>Test class: com.automation.api.tests.impact.ImpactTests<br>Parameters: {ExpectedStatusCode=200, preRequisites=, Description=Get impacts for future Date Range, FieldValidations=, Run=Y, TCID=2, Uri=/impacts/v1/impacts?startDate=2023-5-1&endDate=2024-5-1, Body=, HttpMethod=GET, ExpectedResponseBody=(Not Supported currently)}<br/>
+<a href="#Output-1258503852" onClick='toggleBox("Output-1258503852", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1258503852" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1258503852">
+
+TestCase:
+Get impacts for future Date Range<br/>
+ <br/>
+
+REQUEST Method:
+GET<br/>
+ <br/>
+
+REQUEST url:
+https://api.zone1.development.crown.com/impacts/v1/impacts?startDate=2023-5-1&endDate=2024-5-1<br/>
+ <br/>
+
+REQUEST Headers:
+{Authorization=Bearer eyJraWQiOiI2ZmM5ZjAzNTBhNjcxMWZhMDNmODAyMzA0ZWE5YTEwZmEzZTMyYzI4MWRiM2JmODBiMDg2ZmFiNTIxMTVlNmRhIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1OTUyNCIsInpvbmVpbmZvIjoiQW1lcmljYVwvTmV3X1lvcmsiLCJpc3MiOiJodHRwczpcL1wvYXV0aC56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJsb2NhbGUiOiJlbiIsImp3dFR5cGUiOiJBUEkiLCJjbGllbnRfaWQiOiIzZWJhNTY3YS0yYWRjLTRiZjQtYjE4ZS01NmM5MGUwZmNhZTgiLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL2N1c3RvbWVyU2VsZWN0ZWQiOmZhbHNlLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VvbSI6Ik1FVFJJQyIsInVvbSI6Ik1FVFJJQyIsImN1c3RvbWVySWQiOjE4MiwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9lbWFpbCI6ImVkZGllLmxlZ2crMUBsZWFkaW5nZWRqZS5jb20iLCJleHAiOjE2NTc4MzcwMTQsImlhdCI6MTY1NzgyMjYxNCwiZW1haWwiOiJlZGRpZS5sZWdnKzFAbGVhZGluZ2VkamUuY29tIiwianRpIjoiYzA1NTk0ZjktMDA1Mi00NzNkLThjM2EtMDYwYWU2YzY5ODQ1IiwiYXBwcyI6WyJ0d293YXktbWVzc2FnZSIsImRldmVsb3Blci1wb3J0YWwiLCJwZW9wbGUiXSwic2NwIjpbImlsNjpnbG9iYWwiXSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9jdXN0b21lcklkIjoxODIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvbG9jYWxlIjoiZW4iLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VzZXJUeXBlIjoiVVNFUiIsImF1ZCI6ImFwaS56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJjdXN0b21lclNlbGVjdGVkIjpmYWxzZSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC91c2VySWQiOiI1OTUyNCIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvand0VHlwZSI6IkFQSSIsInVzZXJUeXBlIjoiVVNFUiIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvem9uZWluZm8iOiJBbWVyaWNhXC9OZXdfWW9yayJ9.eefrG1YjaGppklV47FkecpXFGOiU8JJ-HYg6TKr0f_V2XArhBqNQ2goUi0vmb5iyH8u3uswqqCMNIf3krqgrFVR4ujjx4ruod4lfVU1cAp04SdLNd_r3axPVWfBqxebckseCGAi2ULtaD4p25XslcCu9YA3fxaPHi89NTziY5-megSNAcMWf6NSa13dBMjApPAwaLn5WtKl5ScoyouSfrkJxGTr07hFW27qJtf-eOgrcIbiFpyS8v-MQK969i_vgAqEmLTzE27ltufk1NRhXvz9kQnoX1zbm1ZLsRPib8chk8IaGmTs5N5Ovg9Z20UTfS3Kn-bsOb8KzM6w2M3xrKA}<br/>
+ <br/>
+
+REQUEST Body:
+<br/>
+ <br/>
+ <br/>
+
+RESPONSE code:
+200<br/>
+ <br/>
+
+RESPONSE body:
+[
+    
+]<br/>
+ <br/>
+
+RESPONSE time (ms):
+294<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.automation.api.tests.impact.ImpactTests@71809907</td></tr>
+<tr>
+<td title='com.automation.api.tests.impact.ImpactTests.makeGetRequest()'><b>makeGetRequest</b><br>Test class: com.automation.api.tests.impact.ImpactTests<br>Parameters: {ExpectedStatusCode=400, preRequisites=, Description=Get Impacts without mandatory startDate param, FieldValidations=, Run=Y, TCID=3, Uri=/impacts/v1/impacts?endDate=2024-5-1, Body=, HttpMethod=GET, ExpectedResponseBody=(Not Supported currently)}<br/>
+<a href="#Output-470051986" onClick='toggleBox("Output-470051986", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-470051986" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-470051986">
+
+TestCase:
+Get Impacts without mandatory startDate param<br/>
+ <br/>
+
+REQUEST Method:
+GET<br/>
+ <br/>
+
+REQUEST url:
+https://api.zone1.development.crown.com/impacts/v1/impacts?endDate=2024-5-1<br/>
+ <br/>
+
+REQUEST Headers:
+{Authorization=Bearer eyJraWQiOiI2ZmM5ZjAzNTBhNjcxMWZhMDNmODAyMzA0ZWE5YTEwZmEzZTMyYzI4MWRiM2JmODBiMDg2ZmFiNTIxMTVlNmRhIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1OTUyNCIsInpvbmVpbmZvIjoiQW1lcmljYVwvTmV3X1lvcmsiLCJpc3MiOiJodHRwczpcL1wvYXV0aC56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJsb2NhbGUiOiJlbiIsImp3dFR5cGUiOiJBUEkiLCJjbGllbnRfaWQiOiIzZWJhNTY3YS0yYWRjLTRiZjQtYjE4ZS01NmM5MGUwZmNhZTgiLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL2N1c3RvbWVyU2VsZWN0ZWQiOmZhbHNlLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VvbSI6Ik1FVFJJQyIsInVvbSI6Ik1FVFJJQyIsImN1c3RvbWVySWQiOjE4MiwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9lbWFpbCI6ImVkZGllLmxlZ2crMUBsZWFkaW5nZWRqZS5jb20iLCJleHAiOjE2NTc4MzcwMTUsImlhdCI6MTY1NzgyMjYxNSwiZW1haWwiOiJlZGRpZS5sZWdnKzFAbGVhZGluZ2VkamUuY29tIiwianRpIjoiMWI0MmQ3ZWEtMzg4NS00ZTFlLThjYjUtODJjNWYyOTI4YzA1IiwiYXBwcyI6WyJ0d293YXktbWVzc2FnZSIsImRldmVsb3Blci1wb3J0YWwiLCJwZW9wbGUiXSwic2NwIjpbImlsNjpnbG9iYWwiXSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9jdXN0b21lcklkIjoxODIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvbG9jYWxlIjoiZW4iLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VzZXJUeXBlIjoiVVNFUiIsImF1ZCI6ImFwaS56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJjdXN0b21lclNlbGVjdGVkIjpmYWxzZSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC91c2VySWQiOiI1OTUyNCIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvand0VHlwZSI6IkFQSSIsInVzZXJUeXBlIjoiVVNFUiIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvem9uZWluZm8iOiJBbWVyaWNhXC9OZXdfWW9yayJ9.T6yGIbRFoMBEZPIEGnhqV4zW3DQ4v-G9XOFFQ6RADI455DGXUBjpFQXIwxfbbkKanAcvXwAHEmFE6uVI10GZbzthw_vCH33rRrdK8epbd3tvQDxCrx5LP5wjVRZgmfh57cxAW5fFzfwRpPWjmkhEr3ZiRlw02zbVR0ngpzDwOrJgQ32Yoplb9eXL64v24CAF2eRhEaIJB4m1UhPycRasikFU090b44Ff3L_zJFzvEhYFzGcXKkGQnPJjEtCeuacHX_fWZJFiyrEOdRKEOE_Libz9yzeGxhWhSoRtVl13BwYfSMXTcBcCLxEA1fUJ5l-mikj0bXLvepK-KBFcrWx-eA}<br/>
+ <br/>
+
+REQUEST Body:
+<br/>
+ <br/>
+ <br/>
+
+RESPONSE code:
+400<br/>
+ <br/>
+
+RESPONSE body:
+{
+    "errorType": "INVALID",
+    "entity": "impactApiRequest",
+    "fieldErrors": [
+        {
+            "errorCode": "REQUIRED",
+            "field": "startDate"
+        }
+    ]
+}<br/>
+ <br/>
+
+RESPONSE time (ms):
+315<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.automation.api.tests.impact.ImpactTests@71809907</td></tr>
+<tr>
+<td title='com.automation.api.tests.impact.ImpactTests.makeGetRequest()'><b>makeGetRequest</b><br>Test class: com.automation.api.tests.impact.ImpactTests<br>Parameters: {ExpectedStatusCode=400, preRequisites=, Description=Get Impacts without mandatory endDate param, FieldValidations=, Run=Y, TCID=4, Uri=/impacts/v1/impacts?startDate=2023-5-1, Body=, HttpMethod=GET, ExpectedResponseBody=(Not Supported currently)}<br/>
+<a href="#Output-1248595768" onClick='toggleBox("Output-1248595768", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1248595768" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1248595768">
+
+TestCase:
+Get Impacts without mandatory endDate param<br/>
+ <br/>
+
+REQUEST Method:
+GET<br/>
+ <br/>
+
+REQUEST url:
+https://api.zone1.development.crown.com/impacts/v1/impacts?startDate=2023-5-1<br/>
+ <br/>
+
+REQUEST Headers:
+{Authorization=Bearer eyJraWQiOiI2ZmM5ZjAzNTBhNjcxMWZhMDNmODAyMzA0ZWE5YTEwZmEzZTMyYzI4MWRiM2JmODBiMDg2ZmFiNTIxMTVlNmRhIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1OTUyNCIsInpvbmVpbmZvIjoiQW1lcmljYVwvTmV3X1lvcmsiLCJpc3MiOiJodHRwczpcL1wvYXV0aC56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJsb2NhbGUiOiJlbiIsImp3dFR5cGUiOiJBUEkiLCJjbGllbnRfaWQiOiIzZWJhNTY3YS0yYWRjLTRiZjQtYjE4ZS01NmM5MGUwZmNhZTgiLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL2N1c3RvbWVyU2VsZWN0ZWQiOmZhbHNlLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VvbSI6Ik1FVFJJQyIsInVvbSI6Ik1FVFJJQyIsImN1c3RvbWVySWQiOjE4MiwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9lbWFpbCI6ImVkZGllLmxlZ2crMUBsZWFkaW5nZWRqZS5jb20iLCJleHAiOjE2NTc4MzcwMTYsImlhdCI6MTY1NzgyMjYxNiwiZW1haWwiOiJlZGRpZS5sZWdnKzFAbGVhZGluZ2VkamUuY29tIiwianRpIjoiYmIyOGQ1ZDktYTg2MS00MzUwLTljNjktZmI4NmNmNjhmYTZjIiwiYXBwcyI6WyJ0d293YXktbWVzc2FnZSIsImRldmVsb3Blci1wb3J0YWwiLCJwZW9wbGUiXSwic2NwIjpbImlsNjpnbG9iYWwiXSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9jdXN0b21lcklkIjoxODIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvbG9jYWxlIjoiZW4iLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VzZXJUeXBlIjoiVVNFUiIsImF1ZCI6ImFwaS56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJjdXN0b21lclNlbGVjdGVkIjpmYWxzZSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC91c2VySWQiOiI1OTUyNCIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvand0VHlwZSI6IkFQSSIsInVzZXJUeXBlIjoiVVNFUiIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvem9uZWluZm8iOiJBbWVyaWNhXC9OZXdfWW9yayJ9.piG-GXHdB5pUr7reZTa8oxPElc-wAiBWbNKiMrfcWXJZoprxpr87iF-Zt7nf2cv8RX9p6UlWga97lOV6dPoIAGP2n_oat2ahXMKcplyPl9Zdmvv1rkI3XSf0YJSNEAXUq92Y0kC_fJkRWaGzWvibrymGFa9Q7feJ0d_yBmzZhi0qa3Gci2Q_2kNWHk41CicENrVMEHDSM5nqIkGo50h7WUGFmyl7LNvacG-N9NY9R_fAG_BoxshTUXa1SE9842Y1wWQLbExaUbqx3Z5Czm8eNiuAp1SwAoygLzVoiZvzV4yLXUQQ3Ls3UMTuP6Mv-uR6f0z2uJ9KDpiYxh_q-SctvQ}<br/>
+ <br/>
+
+REQUEST Body:
+<br/>
+ <br/>
+ <br/>
+
+RESPONSE code:
+400<br/>
+ <br/>
+
+RESPONSE body:
+{
+    "errorType": "INVALID",
+    "entity": "impactApiRequest",
+    "fieldErrors": [
+        {
+            "errorCode": "REQUIRED",
+            "field": "endDate"
+        }
+    ]
+}<br/>
+ <br/>
+
+RESPONSE time (ms):
+318<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.automation.api.tests.impact.ImpactTests@71809907</td></tr>
 </table><p>
 </body>
 </html>

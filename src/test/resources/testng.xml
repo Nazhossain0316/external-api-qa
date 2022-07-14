@@ -2,7 +2,8 @@
 <suite name="Test-Suite" >
     <test name="AllTests" >
         <classes>
-            <class name="com.automation.api.tests.ImpactTests" />
+            <class name="com.automation.api.tests.impact.ImpactTests" />
+            <class name="com.automation.api.tests.activity.ProductivityTests" />
         </classes>
     </test>
 </suite>

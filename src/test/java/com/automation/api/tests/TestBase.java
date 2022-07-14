@@ -1,5 +1,7 @@
 package com.automation.api.tests;
 
+import com.automation.api.utils.PropertiesUtil;
+import com.automation.api.utils.Request;
 import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
@@ -10,10 +12,19 @@ import java.util.Properties;
 
 public class TestBase {
 
-    static String apiKey;
-    static String authUrl;
-    static String clientId;
-    static String clientSecret;
+    public static String baseUrl;
+    public static String clientId;
+    public static String clientSecret;
+
+    @BeforeSuite
+    public static void setUp() {
+        PropertiesUtil.loadPropertiesFile();
+        baseUrl = System.getProperty("baseUrl");
+        clientId = System.getProperty("clientId");
+        clientSecret = System.getProperty("clientSecret");
+    }
+
+
 
     @BeforeSuite()
     public void loadProperties() throws IOException {
@@ -28,10 +39,5 @@ public class TestBase {
             String value = p.getProperty(name);
             System.setProperty(name, value);
         }
-
-//        apiKey = System.getProperty("apiKey");
-//        authUrl = System.getProperty("authUrl");
-//        clientId = System.getProperty("clientId");
-//        clientSecret = System.getProperty("clientSecret");
     }
 }
