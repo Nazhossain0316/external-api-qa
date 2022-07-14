@@ -59,7 +59,7 @@ public class Request {
         Reporter.log(" ");
         Reporter.log("\nRESPONSE time (ms):\n" + resp.getTime());
         Reporter.log(" ");
-        Reporter.log(" * ---------------------------------- * ");
+        Reporter.log(" ---------------------------------- ");
         return resp;
     }
 }

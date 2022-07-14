@@ -1,7 +1,10 @@
 package com.automation.api.tests.impact;
 
 import com.automation.api.tests.TestBase;
-import com.automation.api.utils.*;
+import com.automation.api.utils.Authorization;
+import com.automation.api.utils.ExcelUtil;
+import com.automation.api.utils.PrerequisiteHelper;
+import com.automation.api.utils.Request;
 import io.restassured.response.Response;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -10,7 +13,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
 
 public class ImpactTests extends TestBase {
@@ -44,7 +46,7 @@ public class ImpactTests extends TestBase {
         Response response = Request.makeRequest("GET", impactApiRequestUrl, requestHeaders, "");
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
-        assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
+        assertEquals(Integer.toString(response.getStatusCode()), expectedStatusCode, "The response code did not match expected");
     }
 
 
@@ -55,7 +57,7 @@ public class ImpactTests extends TestBase {
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
 
         //check if preReq step exist in datasource
-        if(!System.getProperty("preRequisite").equals("")){
+        if (!System.getProperty("preRequisite").equals("")) {
             PrerequisiteHelper.initializePrerequisiteData(System.getProperty("preRequisite"));
         }
 
@@ -71,11 +73,11 @@ public class ImpactTests extends TestBase {
 
         //If ModuleGuid was created in the prerequisite step, it can be retrieved using System.getProperty("moduleGuid")
         String moduleGuid = System.getProperty("moduleGuid");
-        impactApiRequestUrl =impactApiRequestUrl.contains("{moduleGuid}") ? impactApiRequestUrl.replace("{moduleGuid}", moduleGuid): impactApiRequestUrl;
+        impactApiRequestUrl = impactApiRequestUrl.contains("{moduleGuid}") ? impactApiRequestUrl.replace("{moduleGuid}", moduleGuid) : impactApiRequestUrl;
 
         Response response = Request.makeRequest("GET", impactApiRequestUrl, requestHeaders, "");
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
-        assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
+        assertEquals(Integer.toString(response.getStatusCode()), expectedStatusCode, "The response code did not match expected");
     }
 }
