@@ -53,14 +53,13 @@ public class Request {
         Reporter.log(" ");
         Reporter.log("\nREQUEST Body:\n" + requestBody);
         Reporter.log(" ");
-
-        Reporter.log(" ");
         Reporter.log("\nRESPONSE code:\n" + resp.getStatusCode());
         Reporter.log(" ");
         Reporter.log("\nRESPONSE body:\n" + resp.getBody().prettyPrint());
         Reporter.log(" ");
         Reporter.log("\nRESPONSE time (ms):\n" + resp.getTime());
-
+        Reporter.log(" ");
+        Reporter.log(" * ---------------------------------- * ");
         return resp;
     }
 }

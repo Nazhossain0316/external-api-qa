@@ -31,7 +31,13 @@ public class ProductivityTests extends TestBase {
                 "/src/test/resources/data/Activity.xlsx", "Get_last_login");
     }
 
-    //@Test(dataProvider = "getSurveyActivityData")
+    @DataProvider(name = "userSessionsData")
+    public Object[][] getUserSessionsData() {
+        return ExcelUtil.dataSupplier(System.getProperty("user.dir") +
+                "/src/test/resources/data/Activity.xlsx", "GET_user_sessions");
+    }
+
+    @Test(dataProvider = "getSurveyActivityData")
     public void get_activity_v1_users(Map<Object, Object> dataSource) {
         //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
@@ -55,7 +61,6 @@ public class ProductivityTests extends TestBase {
 
         assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
     }
-
 
     @Test(dataProvider = "lastLoginData")
     public void get_activity_v1_users_userId_lastLogin(Map<Object, Object> dataSource) {
@@ -85,5 +90,31 @@ public class ProductivityTests extends TestBase {
         assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
     }
 
+    @Test(dataProvider = "userSessionsData")
+    public void get_activity_v1_users_userId_sessions(Map<Object, Object> dataSource) {
+        //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
+        ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
 
+        //check if preReq step exist in datasource
+        if(!System.getProperty("preRequisite").equals("")){
+            PrerequisiteHelper.initializePrerequisiteData(System.getProperty("preRequisite"));
+        }
+
+        //Get Authorization Token
+        String authToken = Authorization.getAuthorizationToken(clientId, clientSecret);
+
+        //Set Auth Token as Header
+        Map<String, String> requestHeaders = new HashMap<>();
+        requestHeaders.put("Authorization", "Bearer " + authToken);
+
+        String activityRequestUrl = baseUrl + dataSource.get("Uri").toString();
+        //If userId was created in the prerequisite step, it can be retrieved using System.getProperty("userId")
+        String userId = System.getProperty("userId");
+        activityRequestUrl =activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId): activityRequestUrl;
+
+        Response response = Request.makeRequest("GET", activityRequestUrl, requestHeaders, "");
+        String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
+
+        assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
+    }
 }

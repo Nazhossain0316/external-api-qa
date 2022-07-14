@@ -20,16 +20,14 @@ public class PrerequisiteHelper {
         }
 
         switch(preReq){
-            case "Get valid userId for Last Login":
-                String randomValidUserId = getRandomLastLoginUserId();
+            case "Get valid userId from Activity API":
+                String randomValidUserId = getRandomUserIdFromActivityApi();
                 System.setProperty("userId", randomValidUserId);
                 break;
         }
     }
 
-
-
-    public static String getRandomLastLoginUserId(){
+    public static String getRandomUserIdFromActivityApi(){
         String authToken = Authorization.getAuthorizationToken(System.getProperty("clientId"), System.getProperty("clientSecret"));
 
         //Get date range between today and a yr ago
