@@ -17,19 +17,19 @@ import static org.testng.Assert.assertEquals;
 
 public class ImpactTests extends TestBase {
 
-    @DataProvider(name = "get_impacts_v1_impacts")
-    public Object[][] impactMeterData_1() {
+    @DataProvider(name = "impacts_v1_impacts")
+    public Object[][] getImpactsData() {
         return ExcelUtil.dataSupplier(System.getProperty("user.dir") +
                 "/src/test/resources/data/Impact.xlsx", "GET_impacts_v1_impacts");
     }
 
-    @DataProvider(name = "ImpactData_2")
-    public Object[][] impactMeterData_2() {
+    @DataProvider(name = "impacts_comments_data")
+    public Object[][] getImpactsCommentData() {
         return ExcelUtil.dataSupplier(System.getProperty("user.dir") +
                 "/src/test/resources/data/Impact.xlsx", "ImpactData_2");
     }
 
-    @Test(dataProvider = "get_impacts_v1_impacts")
+    @Test(dataProvider = "impacts_v1_impacts")
     public void get_impacts_v1_impacts(Map<Object, Object> dataSource) {
         //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
@@ -50,8 +50,8 @@ public class ImpactTests extends TestBase {
     }
 
 
-    //@Test(dataProvider = "ImpactData_2")
-    public void makeGetRequest_2(Map<Object, Object> dataSource) {
+    //@Test(dataProvider = "impactsCommentsData")
+    public void get_impacts_comments(Map<Object, Object> dataSource) {
         //ToDo: Test Case work still remians. This test case require DB integration (which is currently pending)
         //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);

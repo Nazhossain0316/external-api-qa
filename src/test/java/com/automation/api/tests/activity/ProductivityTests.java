@@ -36,9 +36,9 @@ public class ProductivityTests extends TestBase {
         Map<String, String> requestHeaders = new HashMap<>();
         requestHeaders.put("Authorization", "Bearer " + authToken);
 
-        String impactApiRequestUrl = baseUrl + dataSource.get("Uri").toString();
+        String activityApiUrl = baseUrl + dataSource.get("Uri").toString();
 
-        Response response = Request.makeRequest("GET", impactApiRequestUrl, requestHeaders, "");
+        Response response = Request.makeRequest("GET", activityApiUrl, requestHeaders, "");
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
         assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
@@ -100,7 +100,7 @@ public class ProductivityTests extends TestBase {
         assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
     }
 
-    @Test(dataProvider="simultaneousUserData")
+   @Test(dataProvider="simultaneousUserData")
     public void get_activity_v1_users_userId_simultaneous(Map<Object, Object> dataSource){
         //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
@@ -129,7 +129,7 @@ public class ProductivityTests extends TestBase {
 
     }
 
-    @Test(dataProvider="simultaneousUserLoginData")
+   @Test(dataProvider="simultaneousUserLoginData")
     public void get_activity_v1_users_userId_simultaneous_logins(Map<Object, Object> dataSource){
         //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
@@ -157,7 +157,7 @@ public class ProductivityTests extends TestBase {
         assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
     }
 
-    @Test(dataProvider="userSummaryData")
+   @Test(dataProvider="userSummaryData")
     public void get_activity_v1_users_userId_summary(Map<Object, Object> dataSource){
         //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
