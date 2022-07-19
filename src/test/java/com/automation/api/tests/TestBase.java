@@ -1,12 +1,10 @@
 package com.automation.api.tests;
 
 import com.automation.api.utils.PropertiesUtil;
-import com.automation.api.utils.Request;
 import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -24,8 +22,6 @@ public class TestBase {
         clientSecret = System.getProperty("clientSecret");
     }
 
-
-
     @BeforeSuite()
     public void loadProperties() throws IOException {
         File src = new File(System.getProperty("user.dir") +
@@ -39,5 +35,16 @@ public class TestBase {
             String value = p.getProperty(name);
             System.setProperty(name, value);
         }
+    }
+
+    public boolean schemaValidationFileInExcel() {
+        return System.getProperty("schemaValidationFile").equals("");
+    }
+
+    public void doSchemaValidation(String nameOfApi) {
+        File file = new File(System.getProperty("user.dir")
+                + "/src/test/resources/schemaValidations/"
+                + nameOfApi + "/"
+                + System.getProperty("schemaValidationFile"));
     }
 }

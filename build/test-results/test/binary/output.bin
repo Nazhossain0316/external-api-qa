@@ -1,5 +1,133 @@
 [
     {
+:        "userId": "bfc105b5-7ae6-432d-ae13-db2a3096a0c9",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-15T15:31:59.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "2a2a3a9b-736c-483b-9b24-059ecc4bdb9f",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-17T15:32:45.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "3c8e366b-c33b-4b33-b6de-74ca5417b431",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-17T19:17:37.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "bb231dd1-40e2-4047-b506-98c708bfeece",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-17T20:45:45.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "92ac5937-14dd-429a-81b4-1bec972ede4d",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-17T23:00:16.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "15bedb80-6674-4d7e-b0b4-117f19ae833d",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-18T01:53:45.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "47464da7-d279-4fb7-b1d5-577dd2b69302",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-23T22:58:18.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "3187513e-a1b4-4d56-bb3e-3883a7101125",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-24T01:01:15.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "7335a928-0d50-40ec-8660-68d9f5cafe3a",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-24T11:14:47.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "7e8b6b12-1e14-45e0-b507-235f22ca5ac5",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-28T21:57:37.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "f0aeedd4-0c4b-4836-a79f-e19082dcf142",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-10-01T02:29:08.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "35738848-5d75-4a61-a587-1b3d6e34ce2f",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-10-02T14:57:40.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "75c6e127-1e7d-4291-bec2-0e2dbcb03406",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-10-02T21:18:23.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "77cc00e2-08b8-44dc-96a5-58068ec77176",
+         "lastLoginTimestamp": {
+8            "dateTime": "2021-01-22T19:28:32.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "2811c5bb-2a15-48ba-a015-ee3997e93f94",
+         "lastLoginTimestamp": {
+8            "dateTime": "2021-08-19T14:04:50.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "e4f8131a-3c27-4b2c-ae7b-7f885233512b",
+         "lastLoginTimestamp": {
+8            "dateTime": "2021-09-26T23:25:09.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
 :        "userId": "f4095042-56a5-4699-a32b-b645c166a09a",
          "lastLoginTimestamp": {
 8            "dateTime": "2022-01-20T14:05:35.000+0000",
@@ -16,22 +144,183 @@
         }
     }
 ]
-[
-    {
-:        "userId": "f4095042-56a5-4699-a32b-b645c166a09a",
->        "equipmentId": "d9567de0-afa2-313e-82b7-218703ce23bc"
-    }
-]
 {
     "errorType": "INVALID",
-%    "entity": "lastLoginGetRequest",
+"    "entity": "surveyGetRequest",
     "fieldErrors": [
 
         {
-*            "errorCode": "GENERAL_ERROR",
-            "field": "userId",
-$            "providedValue": "null"
+%            "errorCode": "REQUIRED",
+&            "field": "startTimestamp"
 
         }
     ]
 }
+{
+    "errorType": "INVALID",
+"    "entity": "surveyGetRequest",
+    "fieldErrors": [
+
+        {
+%            "errorCode": "REQUIRED",
+$            "field": "endTimestamp"
+
+        }
+    ]
+}
+[
+    {
+:        "userId": "bfc105b5-7ae6-432d-ae13-db2a3096a0c9",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-15T15:31:59.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "2a2a3a9b-736c-483b-9b24-059ecc4bdb9f",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-17T15:32:45.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "3c8e366b-c33b-4b33-b6de-74ca5417b431",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-17T19:17:37.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "bb231dd1-40e2-4047-b506-98c708bfeece",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-17T20:45:45.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "92ac5937-14dd-429a-81b4-1bec972ede4d",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-17T23:00:16.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "15bedb80-6674-4d7e-b0b4-117f19ae833d",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-18T01:53:45.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "47464da7-d279-4fb7-b1d5-577dd2b69302",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-23T22:58:18.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "3187513e-a1b4-4d56-bb3e-3883a7101125",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-24T01:01:15.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "7335a928-0d50-40ec-8660-68d9f5cafe3a",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-24T11:14:47.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "7e8b6b12-1e14-45e0-b507-235f22ca5ac5",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-28T21:57:37.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "f0aeedd4-0c4b-4836-a79f-e19082dcf142",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-10-01T02:29:08.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "35738848-5d75-4a61-a587-1b3d6e34ce2f",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-10-02T14:57:40.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "75c6e127-1e7d-4291-bec2-0e2dbcb03406",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-10-02T21:18:23.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "77cc00e2-08b8-44dc-96a5-58068ec77176",
+         "lastLoginTimestamp": {
+8            "dateTime": "2021-01-22T19:28:32.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "2811c5bb-2a15-48ba-a015-ee3997e93f94",
+         "lastLoginTimestamp": {
+8            "dateTime": "2021-08-19T14:04:50.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "e4f8131a-3c27-4b2c-ae7b-7f885233512b",
+         "lastLoginTimestamp": {
+8            "dateTime": "2021-09-26T23:25:09.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "f4095042-56a5-4699-a32b-b645c166a09a",
+         "lastLoginTimestamp": {
+8            "dateTime": "2022-01-20T14:05:35.000+0000",
+            "zone": "UTC"
+
+        }
+    },
+    {
+:        "userId": "7c1026e8-0e1f-47a1-8259-78570ada53dd",
+         "lastLoginTimestamp": {
+8            "dateTime": "2022-04-01T14:44:08.000+0000",
+            "zone": "UTC"
+
+        }
+    }
+]
+[
+    {
+:        "userId": "bfc105b5-7ae6-432d-ae13-db2a3096a0c9",
+         "lastLoginTimestamp": {
+8            "dateTime": "2020-09-15T15:31:59.000+0000",
+            "zone": "UTC"
+
+        }
+    }
+]

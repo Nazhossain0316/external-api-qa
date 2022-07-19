@@ -6,12 +6,9 @@ import com.automation.api.utils.ExcelUtil;
 import com.automation.api.utils.PrerequisiteHelper;
 import com.automation.api.utils.Request;
 import io.restassured.response.Response;
-import org.testng.annotations.BeforeMethod;
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import javax.xml.crypto.Data;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,7 +22,7 @@ public class ProductivityTests extends TestBase {
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
 
         //check if preReq step exist in datasource
-        if(!System.getProperty("preRequisite").equals("")){
+        if (!System.getProperty("preRequisite").equals("")) {
             PrerequisiteHelper.initializePrerequisiteData(System.getProperty("preRequisite"));
         }
 
@@ -36,12 +33,21 @@ public class ProductivityTests extends TestBase {
         Map<String, String> requestHeaders = new HashMap<>();
         requestHeaders.put("Authorization", "Bearer " + authToken);
 
+        //Set Request URL
         String activityApiUrl = baseUrl + dataSource.get("Uri").toString();
 
+        //Make Request
         Response response = Request.makeRequest("GET", activityApiUrl, requestHeaders, "");
-        String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
-        assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
+        //Validate expected vs. actual Response Code
+        String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
+        assertEquals(Integer.toString(response.getStatusCode()), expectedStatusCode, "The response code did not match expected");
+
+        //Validate Schema is the schema column has a file Name
+        if (schemaValidationFileInExcel()) {
+            doSchemaValidation("activity");
+        }
+
     }
 
     @Test(dataProvider = "lastLoginData")
@@ -50,7 +56,7 @@ public class ProductivityTests extends TestBase {
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
 
         //check if preReq step exist in datasource
-        if(!System.getProperty("preRequisite").equals("")){
+        if (!System.getProperty("preRequisite").equals("")) {
             PrerequisiteHelper.initializePrerequisiteData(System.getProperty("preRequisite"));
         }
 
@@ -64,12 +70,12 @@ public class ProductivityTests extends TestBase {
         String activityRequestUrl = baseUrl + dataSource.get("Uri").toString();
         //If userId was created in the prerequisite step, it can be retrieved using System.getProperty("userId")
         String userId = System.getProperty("userId");
-        activityRequestUrl =activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId): activityRequestUrl;
+        activityRequestUrl = activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId) : activityRequestUrl;
 
         Response response = Request.makeRequest("GET", activityRequestUrl, requestHeaders, "");
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
-        assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
+        assertEquals(Integer.toString(response.getStatusCode()), expectedStatusCode, "The response code did not match expected");
     }
 
     @Test(dataProvider = "userSessionsData")
@@ -78,7 +84,7 @@ public class ProductivityTests extends TestBase {
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
 
         //check if preReq step exist in datasource
-        if(!System.getProperty("preRequisite").equals("")){
+        if (!System.getProperty("preRequisite").equals("")) {
             PrerequisiteHelper.initializePrerequisiteData(System.getProperty("preRequisite"));
         }
 
@@ -92,21 +98,21 @@ public class ProductivityTests extends TestBase {
         String activityRequestUrl = baseUrl + dataSource.get("Uri").toString();
         //If userId was created in the prerequisite step, it can be retrieved using System.getProperty("userId")
         String userId = System.getProperty("userId");
-        activityRequestUrl =activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId): activityRequestUrl;
+        activityRequestUrl = activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId) : activityRequestUrl;
 
         Response response = Request.makeRequest("GET", activityRequestUrl, requestHeaders, "");
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
-        assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
+        assertEquals(Integer.toString(response.getStatusCode()), expectedStatusCode, "The response code did not match expected");
     }
 
-   @Test(dataProvider="simultaneousUserData")
-    public void get_activity_v1_users_userId_simultaneous(Map<Object, Object> dataSource){
+    @Test(dataProvider = "simultaneousUserData")
+    public void get_activity_v1_users_userId_simultaneous(Map<Object, Object> dataSource) {
         //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
 
         //check if preReq step exist in datasource
-        if(!System.getProperty("preRequisite").equals("")){
+        if (!System.getProperty("preRequisite").equals("")) {
             PrerequisiteHelper.initializePrerequisiteData(System.getProperty("preRequisite"));
         }
 
@@ -120,22 +126,22 @@ public class ProductivityTests extends TestBase {
         String activityRequestUrl = baseUrl + dataSource.get("Uri").toString();
         //If userId was created in the prerequisite step, it can be retrieved using System.getProperty("userId")
         String userId = System.getProperty("userId");
-        activityRequestUrl =activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId): activityRequestUrl;
+        activityRequestUrl = activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId) : activityRequestUrl;
 
         Response response = Request.makeRequest("GET", activityRequestUrl, requestHeaders, "");
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
-        assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
+        assertEquals(Integer.toString(response.getStatusCode()), expectedStatusCode, "The response code did not match expected");
 
     }
 
-   @Test(dataProvider="simultaneousUserLoginData")
-    public void get_activity_v1_users_userId_simultaneous_logins(Map<Object, Object> dataSource){
+    @Test(dataProvider = "simultaneousUserLoginData")
+    public void get_activity_v1_users_userId_simultaneous_logins(Map<Object, Object> dataSource) {
         //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
 
         //check if preReq step exist in datasource
-        if(!System.getProperty("preRequisite").equals("")){
+        if (!System.getProperty("preRequisite").equals("")) {
             PrerequisiteHelper.initializePrerequisiteData(System.getProperty("preRequisite"));
         }
 
@@ -149,21 +155,21 @@ public class ProductivityTests extends TestBase {
         String activityRequestUrl = baseUrl + dataSource.get("Uri").toString();
         //If userId was created in the prerequisite step, it can be retrieved using System.getProperty("userId")
         String userId = System.getProperty("userId");
-        activityRequestUrl =activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId): activityRequestUrl;
+        activityRequestUrl = activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId) : activityRequestUrl;
 
         Response response = Request.makeRequest("GET", activityRequestUrl, requestHeaders, "");
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
-        assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
+        assertEquals(Integer.toString(response.getStatusCode()), expectedStatusCode, "The response code did not match expected");
     }
 
-   @Test(dataProvider="userSummaryData")
-    public void get_activity_v1_users_userId_summary(Map<Object, Object> dataSource){
+    @Test(dataProvider = "userSummaryData")
+    public void get_activity_v1_users_userId_summary(Map<Object, Object> dataSource) {
         //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
 
         //check if preReq step exist in datasource
-        if(!System.getProperty("preRequisite").equals("")){
+        if (!System.getProperty("preRequisite").equals("")) {
             PrerequisiteHelper.initializePrerequisiteData(System.getProperty("preRequisite"));
         }
 
@@ -178,14 +184,14 @@ public class ProductivityTests extends TestBase {
         String activityRequestUrl = baseUrl + dataSource.get("Uri").toString();
         //If userId was created in the prerequisite step, it can be retrieved using System.getProperty("userId")
         String userId = System.getProperty("userId");
-        activityRequestUrl =activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId): activityRequestUrl;
+        activityRequestUrl = activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId) : activityRequestUrl;
 
         //Make Request
         Response response = Request.makeRequest("GET", activityRequestUrl, requestHeaders, "");
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
         //Assertions
-        assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
+        assertEquals(Integer.toString(response.getStatusCode()), expectedStatusCode, "The response code did not match expected");
     }
 
     @DataProvider(name = "surveyActivityData")

@@ -13,9 +13,9 @@ repositories {
 
 dependencies {
     implementation 'org.testng:testng:7.1.0'
+    testImplementation 'io.rest-assured:json-schema-validator:5.1.0'
     testImplementation 'io.rest-assured:rest-assured:4.3.3'
     implementation 'org.apache.poi:poi-ooxml:3.9'
-
 }
 
 test {

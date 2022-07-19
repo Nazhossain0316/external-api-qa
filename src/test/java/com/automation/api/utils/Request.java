@@ -1,13 +1,9 @@
 package com.automation.api.utils;
 
-import io.restassured.RestAssured;
-import io.restassured.builder.RequestSpecBuilder;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import org.testng.Reporter;
-
 import java.util.Map;
-
 import static io.restassured.RestAssured.given;
 
 public class Request {
