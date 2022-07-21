@@ -25,6 +25,39 @@ public class PrerequisiteHelper {
                 System.setProperty("userId", randomValidUserId);
                 break;
         }
+
+        switch(preReq){
+            case "Get random equipmentId":
+                String randomEquipmentId = getRandomEquipmentIdFromActivityApi();
+                System.setProperty("equipmentId", randomEquipmentId);
+                break;
+        }
+    }
+
+    private static String getRandomEquipmentIdFromActivityApi() {
+        String authToken = Authorization.getAuthorizationToken(System.getProperty("clientId"), System.getProperty("clientSecret"));
+
+        //Get date range between today and a yr ago
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-M-d");
+        Date date = new Date();
+        String today = dateFormat.format(date);
+        Calendar c = Calendar.getInstance();
+        c.setTime(date);
+        c.add(Calendar.MONTH, -6);
+        String sixMonthsAgo = dateFormat.format(c.getTime());
+
+        //Add auth token to request header
+        Map<String, String> requestHeaders = new HashMap<>();
+        requestHeaders.put("Authorization", "Bearer " + authToken);
+
+        String activityUrl = System.getProperty("baseUrl")
+                +"/activity/v1/equipment?startTimestamp="+sixMonthsAgo+"&endTimestamp="+today;
+        Response response = Request.makeRequest("GET", activityUrl, requestHeaders, "");
+
+        Assert.assertTrue(response.getStatusCode()==200, "The request to get equipmentId failed!");
+
+        String randomValidUserId = response.path("equipmentId[0]").toString();
+        return  randomValidUserId;
     }
 
     public static String getRandomUserIdFromActivityApi(){
