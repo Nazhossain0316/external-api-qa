@@ -6,6 +6,7 @@ import com.automation.api.utils.ExcelUtil;
 import com.automation.api.utils.PrerequisiteHelper;
 import com.automation.api.utils.Request;
 import io.restassured.response.Response;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
@@ -13,10 +14,9 @@ import java.util.Map;
 
 import static org.testng.Assert.assertEquals;
 
-public class Utilization extends TestBase {
+public class UtilizationTests extends TestBase {
 
-
-    //@Test
+    @Test(dataProvider = "equipmentData")
     public void activity_v1_equipment(Map<Object, Object> dataSource){
         //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
@@ -41,6 +41,9 @@ public class Utilization extends TestBase {
         assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
     }
 
-
-
+    @DataProvider(name = "equipmentData")
+    public Object[][] getEquipmentData() {
+        return ExcelUtil.dataSupplier(System.getProperty("user.dir") +
+                "/src/test/resources/data/Activity_Utilization.xlsx", "GET_equipment");
+    }
 }

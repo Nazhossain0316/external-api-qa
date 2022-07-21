@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "equipmentId": {
+      "type": "string"
+    },
+    "lastLoginTimestamp": {
+      "type": "object",
+      "properties": {
+        "dateTime": {
+          "type": "string"
+        },
+        "zone": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "dateTime",
+        "zone"
+      ]
+    }
+  },
+  "required": [
+    "equipmentId",
+    "lastLoginTimestamp"
+  ]
+}

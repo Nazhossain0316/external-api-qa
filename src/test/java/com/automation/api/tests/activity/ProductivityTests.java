@@ -21,7 +21,7 @@ public class ProductivityTests extends TestBase {
         //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
 
-        //check if preReq step exist in datasource
+        //set preRequisite properties if required by the datasheet
         if (!System.getProperty("preRequisite").equals("")) {
             PrerequisiteHelper.initializePrerequisiteData(System.getProperty("preRequisite"));
         }
@@ -47,7 +47,6 @@ public class ProductivityTests extends TestBase {
         if (schemaValidationFileInExcel()) {
             doSchemaValidation("activity");
         }
-
     }
 
     @Test(dataProvider = "lastLoginData")
@@ -197,36 +196,36 @@ public class ProductivityTests extends TestBase {
     @DataProvider(name = "surveyActivityData")
     public Object[][] getSurveyActivityData() {
         return ExcelUtil.dataSupplier(System.getProperty("user.dir") +
-                "/src/test/resources/data/Activity.xlsx", "GET_activity_v1_users");
+                "/src/test/resources/data/Activity_Productivity.xlsx", "GET_activity_v1_users");
     }
 
     @DataProvider(name = "lastLoginData")
     public Object[][] getLastLoginData() {
         return ExcelUtil.dataSupplier(System.getProperty("user.dir") +
-                "/src/test/resources/data/Activity.xlsx", "Get_last_login");
+                "/src/test/resources/data/Activity_Productivity.xlsx", "Get_last_login");
     }
 
     @DataProvider(name = "userSessionsData")
     public Object[][] getUserSessionsData() {
         return ExcelUtil.dataSupplier(System.getProperty("user.dir") +
-                "/src/test/resources/data/Activity.xlsx", "GET_user_sessions");
+                "/src/test/resources/data/Activity_Productivity.xlsx", "GET_user_sessions");
     }
 
     @DataProvider(name = "simultaneousUserData")
     public Object[][] getSimultaneousUSerData() {
         return ExcelUtil.dataSupplier(System.getProperty("user.dir") +
-                "/src/test/resources/data/Activity.xlsx", "GET_user_simultaneous");
+                "/src/test/resources/data/Activity_Productivity.xlsx", "GET_user_simultaneous");
     }
 
     @DataProvider(name = "simultaneousUserLoginData")
     public Object[][] getSimultaneousUserLoginData() {
         return ExcelUtil.dataSupplier(System.getProperty("user.dir") +
-                "/src/test/resources/data/Activity.xlsx", "GET_user_simultaneous_logins");
+                "/src/test/resources/data/Activity_Productivity.xlsx", "GET_user_simultaneous_logins");
     }
 
     @DataProvider(name = "userSummaryData")
     public Object[][] getUserSummaryData() {
         return ExcelUtil.dataSupplier(System.getProperty("user.dir") +
-                "/src/test/resources/data/Activity.xlsx", "GET_user_summary");
+                "/src/test/resources/data/Activity_Productivity.xlsx", "GET_user_summary");
     }
 }
