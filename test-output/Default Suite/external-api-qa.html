@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>external-api-qa</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 21 15:36:26 EDT 2022</td>
+<td>Started on:</td><td>Fri Jul 22 15:14:16 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6999 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3815 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,22 +67,22 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.automation.api.tests.activity.UtilizationTests.activity_v1_equipment()'><b>activity_v1_equipment</b><br>Test class: com.automation.api.tests.activity.UtilizationTests<br>Parameters: {ExpectedStatusCode=200, Description=Get equipment activity survey, schemaValidationFile=getEquipmentSurvey.json, preRequisite=, Run=Y, TCID=1, Uri=/activity/v1/equipment?pageSize=50&startTimestamp=2021-5-1&endTimestamp=2022-5-1, HttpMethod=GET, Notes=}<br/>
-<a href="#Output-1241480588" onClick='toggleBox("Output-1241480588", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.automation.api.tests.activity.ProductivityTests.get_activity_v1_users()'><b>get_activity_v1_users</b><br>Test class: com.automation.api.tests.activity.ProductivityTests<br>Parameters: {ExpectedStatusCode=200, Description=Get User Activity Survey, schemaValidationFile=GET_activity_v1_users.json, preRequisite=, Run=Y, TCID=1, Uri=/activity/v1/users?startTimestamp=2020-5-1&endTimestamp=2022-5-1&pageSize=100, HttpMethod=GET, Notes=}<br/>
+<a href="#Output-2142852357" onClick='toggleBox("Output-2142852357", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1241480588" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1241480588">
+<a href="#Output-2142852357" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2142852357">
 
 TestCase:
-Get equipment activity survey<br/>
+Get User Activity Survey<br/>
  <br/>
 
 REQUEST Method:
@@ -90,11 +90,11 @@ GET<br/>
  <br/>
 
 REQUEST url:
-https://api.zone1.development.crown.com/activity/v1/equipment?pageSize=50&startTimestamp=2021-5-1&endTimestamp=2022-5-1<br/>
+https://api.zone1.development.crown.com/activity/v1/users?startTimestamp=2020-5-1&endTimestamp=2022-5-1&pageSize=100<br/>
  <br/>
 
 REQUEST Headers:
-{Authorization=Bearer eyJraWQiOiI2ZGU4ZWY4MTEyOGVhM2M5MDE4MDgwMWY2YzY3Yjc5ZGJkNmI4MzFhMmEzMTA0M2NmZTRlMmM0M2QzZmNjMzA4IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1OTUyNCIsInpvbmVpbmZvIjoiQW1lcmljYVwvTmV3X1lvcmsiLCJpc3MiOiJodHRwczpcL1wvYXV0aC56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJsb2NhbGUiOiJlbiIsImp3dFR5cGUiOiJBUEkiLCJjbGllbnRfaWQiOiIzZWJhNTY3YS0yYWRjLTRiZjQtYjE4ZS01NmM5MGUwZmNhZTgiLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL2N1c3RvbWVyU2VsZWN0ZWQiOmZhbHNlLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VvbSI6Ik1FVFJJQyIsInVvbSI6Ik1FVFJJQyIsImN1c3RvbWVySWQiOjE4MiwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9lbWFpbCI6ImVkZGllLmxlZ2crMUBsZWFkaW5nZWRqZS5jb20iLCJleHAiOjE2NTg0NDY1ODYsImlhdCI6MTY1ODQzMjE4NiwiZW1haWwiOiJlZGRpZS5sZWdnKzFAbGVhZGluZ2VkamUuY29tIiwianRpIjoiMzI2NmYwNzQtYzMxNi00MzhiLTg3YmYtNTBjYmNkYjhmOTc1IiwiYXBwcyI6WyJ0d293YXktbWVzc2FnZSIsImRldmVsb3Blci1wb3J0YWwiLCJwZW9wbGUiXSwic2NwIjpbImlsNjpnbG9iYWwiXSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9jdXN0b21lcklkIjoxODIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvbG9jYWxlIjoiZW4iLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VzZXJUeXBlIjoiVVNFUiIsImF1ZCI6ImFwaS56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJjdXN0b21lclNlbGVjdGVkIjpmYWxzZSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC91c2VySWQiOiI1OTUyNCIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvand0VHlwZSI6IkFQSSIsInVzZXJUeXBlIjoiVVNFUiIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvem9uZWluZm8iOiJBbWVyaWNhXC9OZXdfWW9yayJ9.QzYIWRjz5_8WM_NosdLt0b-PdUtatN77BOo0QdV07Y9cqsanisi4YQXLQ74XXnHKi1jtazwF9QZv18WPrtXZ9i32j9WIxDJHhfccWNb7gl7TopgIMl4uW1ED9czzKWCnigpiluYb4azG2Gg8aWvztFoE_8605LbTiBkkvccKrbn6qAwYK0Q6F2DUgfBumqm1wkW2a4cYIpNzmqIEOT-2nRDDS8UKaVr1YgFxBjOeVaT4xVzEjMuB-zWwhj3c16gqkw1dXhGCI9C8c6N7vGGWthjcRpSbDZNt6TsZQz5y9dviGoR6G_ZrPOmDXxN-8ftrgiqStgHuPcJjQYH13qVGvQ}<br/>
+{Authorization=Bearer eyJraWQiOiJkYzI4OGVlYjIxMzU3ODczMjc0MGMyYjQwNTQwYjUxNzQ0ZTU4N2VjMzFlYzNmMTY2MDM2OGIwMmVkNWE5ZjRmIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1OTUyNCIsInpvbmVpbmZvIjoiQW1lcmljYVwvTmV3X1lvcmsiLCJpc3MiOiJodHRwczpcL1wvYXV0aC56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJsb2NhbGUiOiJlbiIsImp3dFR5cGUiOiJBUEkiLCJjbGllbnRfaWQiOiIzZWJhNTY3YS0yYWRjLTRiZjQtYjE4ZS01NmM5MGUwZmNhZTgiLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL2N1c3RvbWVyU2VsZWN0ZWQiOmZhbHNlLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VvbSI6Ik1FVFJJQyIsInVvbSI6Ik1FVFJJQyIsImN1c3RvbWVySWQiOjE4MiwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9lbWFpbCI6ImVkZGllLmxlZ2crMUBsZWFkaW5nZWRqZS5jb20iLCJleHAiOjE2NTg1MzE2NTcsImlhdCI6MTY1ODUxNzI1NywiZW1haWwiOiJlZGRpZS5sZWdnKzFAbGVhZGluZ2VkamUuY29tIiwianRpIjoiYjdjMjJhMDUtYTI0MC00NWYwLTk1NzAtNjY0ZWFkZjBlOTk5IiwiYXBwcyI6WyJ0d293YXktbWVzc2FnZSIsImRldmVsb3Blci1wb3J0YWwiLCJwZW9wbGUiXSwic2NwIjpbImlsNjpnbG9iYWwiXSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9jdXN0b21lcklkIjoxODIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvbG9jYWxlIjoiZW4iLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VzZXJUeXBlIjoiVVNFUiIsImF1ZCI6ImFwaS56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJjdXN0b21lclNlbGVjdGVkIjpmYWxzZSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC91c2VySWQiOiI1OTUyNCIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvand0VHlwZSI6IkFQSSIsInVzZXJUeXBlIjoiVVNFUiIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvem9uZWluZm8iOiJBbWVyaWNhXC9OZXdfWW9yayJ9.h8ckw-hYCtJa_MOAdE4a3i3JSV6uC2zsSLbC8giH-iFr5Ul6ZnSVmLk-GhPXr5XW2CXXWOVUb_X-UZM-loUxDHjSXiV5evNr2gEMikHLSuwS_W0da0AVmPDatz5UxaW2ls5PxaWs6yEq84GSXVellUbQCfQNNNyoO09BFdrifEq-6COoTRYIW-CYu1FoYP80KNkkDDBJwWC91Xap0_ikn8lxNDGYfChWGesZ132Br8xR7sKzc2CoiXoZZyMa0pkG5BQr_4gMvTMNYVxA373GCV8_wQxhgEKqx6tZ8aTvn7WpM-RfLQ-hKkjQ7Pt-dgmrVwSv3Z0J70185I1--8SpgA}<br/>
  <br/>
 
 REQUEST Body:
@@ -108,28 +108,126 @@ RESPONSE code:
 RESPONSE body:
 [
     {
-        "equipmentId": "c71d7bd3-08bc-3348-a858-f7fdc8c7d210",
+        "userId": "bfc105b5-7ae6-432d-ae13-db2a3096a0c9",
         "lastLoginTimestamp": {
-            "dateTime": "2021-09-23T15:54:57.000+0000",
+            "dateTime": "2020-09-15T15:31:59.000+0000",
             "zone": "UTC"
         }
     },
     {
-        "equipmentId": "e241dffb-70e3-3eb1-b4a7-18ce06943f00",
+        "userId": "2a2a3a9b-736c-483b-9b24-059ecc4bdb9f",
+        "lastLoginTimestamp": {
+            "dateTime": "2020-09-17T15:32:45.000+0000",
+            "zone": "UTC"
+        }
+    },
+    {
+        "userId": "3c8e366b-c33b-4b33-b6de-74ca5417b431",
+        "lastLoginTimestamp": {
+            "dateTime": "2020-09-17T19:17:37.000+0000",
+            "zone": "UTC"
+        }
+    },
+    {
+        "userId": "bb231dd1-40e2-4047-b506-98c708bfeece",
+        "lastLoginTimestamp": {
+            "dateTime": "2020-09-17T20:45:45.000+0000",
+            "zone": "UTC"
+        }
+    },
+    {
+        "userId": "92ac5937-14dd-429a-81b4-1bec972ede4d",
+        "lastLoginTimestamp": {
+            "dateTime": "2020-09-17T23:00:16.000+0000",
+            "zone": "UTC"
+        }
+    },
+    {
+        "userId": "15bedb80-6674-4d7e-b0b4-117f19ae833d",
+        "lastLoginTimestamp": {
+            "dateTime": "2020-09-18T01:53:45.000+0000",
+            "zone": "UTC"
+        }
+    },
+    {
+        "userId": "47464da7-d279-4fb7-b1d5-577dd2b69302",
+        "lastLoginTimestamp": {
+            "dateTime": "2020-09-23T22:58:18.000+0000",
+            "zone": "UTC"
+        }
+    },
+    {
+        "userId": "3187513e-a1b4-4d56-bb3e-3883a7101125",
+        "lastLoginTimestamp": {
+            "dateTime": "2020-09-24T01:01:15.000+0000",
+            "zone": "UTC"
+        }
+    },
+    {
+        "userId": "7335a928-0d50-40ec-8660-68d9f5cafe3a",
+        "lastLoginTimestamp": {
+            "dateTime": "2020-09-24T11:14:47.000+0000",
+            "zone": "UTC"
+        }
+    },
+    {
+        "userId": "7e8b6b12-1e14-45e0-b507-235f22ca5ac5",
+        "lastLoginTimestamp": {
+            "dateTime": "2020-09-28T21:57:37.000+0000",
+            "zone": "UTC"
+        }
+    },
+    {
+        "userId": "f0aeedd4-0c4b-4836-a79f-e19082dcf142",
+        "lastLoginTimestamp": {
+            "dateTime": "2020-10-01T02:29:08.000+0000",
+            "zone": "UTC"
+        }
+    },
+    {
+        "userId": "35738848-5d75-4a61-a587-1b3d6e34ce2f",
+        "lastLoginTimestamp": {
+            "dateTime": "2020-10-02T14:57:40.000+0000",
+            "zone": "UTC"
+        }
+    },
+    {
+        "userId": "75c6e127-1e7d-4291-bec2-0e2dbcb03406",
+        "lastLoginTimestamp": {
+            "dateTime": "2020-10-02T21:18:23.000+0000",
+            "zone": "UTC"
+        }
+    },
+    {
+        "userId": "77cc00e2-08b8-44dc-96a5-58068ec77176",
+        "lastLoginTimestamp": {
+            "dateTime": "2021-01-22T19:28:32.000+0000",
+            "zone": "UTC"
+        }
+    },
+    {
+        "userId": "2811c5bb-2a15-48ba-a015-ee3997e93f94",
+        "lastLoginTimestamp": {
+            "dateTime": "2021-08-19T14:04:50.000+0000",
+            "zone": "UTC"
+        }
+    },
+    {
+        "userId": "e4f8131a-3c27-4b2c-ae7b-7f885233512b",
         "lastLoginTimestamp": {
             "dateTime": "2021-09-26T23:25:09.000+0000",
             "zone": "UTC"
         }
     },
     {
-        "equipmentId": "d9567de0-afa2-313e-82b7-218703ce23bc",
+        "userId": "f4095042-56a5-4699-a32b-b645c166a09a",
         "lastLoginTimestamp": {
             "dateTime": "2022-01-20T14:05:35.000+0000",
             "zone": "UTC"
         }
     },
     {
-        "equipmentId": "e562306d-125f-31fd-9e98-ccb409073e84",
+        "userId": "7c1026e8-0e1f-47a1-8259-78570ada53dd",
         "lastLoginTimestamp": {
             "dateTime": "2022-04-01T14:44:08.000+0000",
             "zone": "UTC"
@@ -139,340 +237,394 @@ RESPONSE body:
  <br/>
 
 RESPONSE time (ms):
-431<br/>
+462<br/>
  <br/>
  ---------------------------------- <br/>
 </div>
 </td>
-<td></td>
-<td>2</td>
-<td>com.automation.api.tests.activity.UtilizationTests@5c33f1a9</td></tr>
-<tr>
-<td title='com.automation.api.tests.activity.UtilizationTests.activity_v1_equipment_equipmentId_lastLogins()'><b>activity_v1_equipment_equipmentId_lastLogins</b><br>Test class: com.automation.api.tests.activity.UtilizationTests<br>Parameters: {ExpectedStatusCode=200, Description=Get Last Logins by Equipment ID, schemaValidationFile=getEquipmentSurvey.json, preRequisite=Get random equipmentId, Run=Y, TCID=1, Uri=/activity/v1/equipment/{equipmentId}/last-logins?pageSize=50&startTimestamp=2021-5-1&endTimestamp=2022-5-1, HttpMethod=GET, Notes=}<br/>
-<a href="#Output-185544081" onClick='toggleBox("Output-185544081", this, "Show output", "Hide output");'>Show output</a>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties ([&quot;equipmentId&quot;])
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/items/0&quot;}
+    instance: {&quot;pointer&quot;:&quot;/0&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;required&quot;
+    required: [&quot;equipmentId&quot;,&quot;lastLoginTimestamp&quot;,&quot;userId&quot;]
+    missing: [&quot;equipmentId&quot;]
 
-<a href="#Output-185544081" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-185544081">
-
-TestCase:
-Get Last Logins by Equipment ID<br/>
- <br/>
-
-REQUEST Method:
-GET<br/>
- <br/>
-
-REQUEST url:
-https://api.zone1.development.crown.com/activity/v1/equipment?startTimestamp=2022-1-21&endTimestamp=2022-7-21<br/>
- <br/>
-
-REQUEST Headers:
-{Authorization=Bearer eyJraWQiOiI2ZGU4ZWY4MTEyOGVhM2M5MDE4MDgwMWY2YzY3Yjc5ZGJkNmI4MzFhMmEzMTA0M2NmZTRlMmM0M2QzZmNjMzA4IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1OTUyNCIsInpvbmVpbmZvIjoiQW1lcmljYVwvTmV3X1lvcmsiLCJpc3MiOiJodHRwczpcL1wvYXV0aC56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJsb2NhbGUiOiJlbiIsImp3dFR5cGUiOiJBUEkiLCJjbGllbnRfaWQiOiIzZWJhNTY3YS0yYWRjLTRiZjQtYjE4ZS01NmM5MGUwZmNhZTgiLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL2N1c3RvbWVyU2VsZWN0ZWQiOmZhbHNlLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VvbSI6Ik1FVFJJQyIsInVvbSI6Ik1FVFJJQyIsImN1c3RvbWVySWQiOjE4MiwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9lbWFpbCI6ImVkZGllLmxlZ2crMUBsZWFkaW5nZWRqZS5jb20iLCJleHAiOjE2NTg0NDY1ODcsImlhdCI6MTY1ODQzMjE4NywiZW1haWwiOiJlZGRpZS5sZWdnKzFAbGVhZGluZ2VkamUuY29tIiwianRpIjoiM2I5ZTdiZWQtNTA3Zi00ZTE5LWI4ZTktNDI2YmI2N2RhNDMwIiwiYXBwcyI6WyJ0d293YXktbWVzc2FnZSIsImRldmVsb3Blci1wb3J0YWwiLCJwZW9wbGUiXSwic2NwIjpbImlsNjpnbG9iYWwiXSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9jdXN0b21lcklkIjoxODIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvbG9jYWxlIjoiZW4iLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VzZXJUeXBlIjoiVVNFUiIsImF1ZCI6ImFwaS56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJjdXN0b21lclNlbGVjdGVkIjpmYWxzZSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC91c2VySWQiOiI1OTUyNCIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvand0VHlwZSI6IkFQSSIsInVzZXJUeXBlIjoiVVNFUiIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvem9uZWluZm8iOiJBbWVyaWNhXC9OZXdfWW9yayJ9.mWmdUQl2F5M4nUNhdzZptdysXY6OeZm-oYGyliOiQVXl-NmsVQWYqJMgO98kDqYmR95mxiGEBBqEFsz2L0e-F4NVR_OSRKL4o8yNgHwIOFz9WfFb5jC770EEvUhnQWcYX-ZXxgDguHIlrpYx6GvHUseKlvbLs8vZTRq7qUcsPI6_nS42gaFnxGx9Ln0LBf7qzC3IgTZPg02f54EjP10D7D3sFSLcFWwjEHrenSCgSoAB1CjQ55tCTQWm8CMvNjkvFBl-f-anXngGJQYRgrOYvargZVgQMqCl0z6q-DPwDX_qpGxyjueT5k4aW36Vy3gPjMW4GkkSoBPbVsE9jbbL8Q}<br/>
- <br/>
-
-REQUEST Body:
-<br/>
- <br/>
-
-RESPONSE code:
-200<br/>
- <br/>
-
-RESPONSE body:
-[
+  Actual: [
     {
-        "equipmentId": "e562306d-125f-31fd-9e98-ccb409073e84",
-        "lastLoginTimestamp": {
-            "dateTime": "2022-04-01T14:44:08.000+0000",
-            "zone": "UTC"
-        }
-    }
-]<br/>
- <br/>
-
-RESPONSE time (ms):
-382<br/>
- <br/>
- ---------------------------------- <br/>
-
-TestCase:
-Get Last Logins by Equipment ID<br/>
- <br/>
-
-REQUEST Method:
-GET<br/>
- <br/>
-
-REQUEST url:
-https://api.zone1.development.crown.com/activity/v1/equipment/e562306d-125f-31fd-9e98-ccb409073e84/last-logins?pageSize=50&startTimestamp=2021-5-1&endTimestamp=2022-5-1<br/>
- <br/>
-
-REQUEST Headers:
-{Authorization=Bearer eyJraWQiOiI2ZGU4ZWY4MTEyOGVhM2M5MDE4MDgwMWY2YzY3Yjc5ZGJkNmI4MzFhMmEzMTA0M2NmZTRlMmM0M2QzZmNjMzA4IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1OTUyNCIsInpvbmVpbmZvIjoiQW1lcmljYVwvTmV3X1lvcmsiLCJpc3MiOiJodHRwczpcL1wvYXV0aC56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJsb2NhbGUiOiJlbiIsImp3dFR5cGUiOiJBUEkiLCJjbGllbnRfaWQiOiIzZWJhNTY3YS0yYWRjLTRiZjQtYjE4ZS01NmM5MGUwZmNhZTgiLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL2N1c3RvbWVyU2VsZWN0ZWQiOmZhbHNlLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VvbSI6Ik1FVFJJQyIsInVvbSI6Ik1FVFJJQyIsImN1c3RvbWVySWQiOjE4MiwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9lbWFpbCI6ImVkZGllLmxlZ2crMUBsZWFkaW5nZWRqZS5jb20iLCJleHAiOjE2NTg0NDY1ODgsImlhdCI6MTY1ODQzMjE4OCwiZW1haWwiOiJlZGRpZS5sZWdnKzFAbGVhZGluZ2VkamUuY29tIiwianRpIjoiOGYxZWE1MjMtOTI2Yi00YmRiLThhMmMtODRiNDM1ZDVkMjUyIiwiYXBwcyI6WyJ0d293YXktbWVzc2FnZSIsImRldmVsb3Blci1wb3J0YWwiLCJwZW9wbGUiXSwic2NwIjpbImlsNjpnbG9iYWwiXSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9jdXN0b21lcklkIjoxODIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvbG9jYWxlIjoiZW4iLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VzZXJUeXBlIjoiVVNFUiIsImF1ZCI6ImFwaS56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJjdXN0b21lclNlbGVjdGVkIjpmYWxzZSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC91c2VySWQiOiI1OTUyNCIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvand0VHlwZSI6IkFQSSIsInVzZXJUeXBlIjoiVVNFUiIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvem9uZWluZm8iOiJBbWVyaWNhXC9OZXdfWW9yayJ9.igcJ8D54e-mvDuJNsm7BSd1PKFHzI1Ab2j6O-cMoweb-ccPpm7GQPJU2z6hVQMDbRaGLEhi8QkTm54uYX6sjj_GtMzRNKB_GPdNFuEGxOw9uR-pnjxF339oaxD_I81nsRa-m2uTEnziUzor7JFQrSVaECIMQEaOON53uqIl295nLk20c598xZe5M8q61bYOM9ttmy495fVXPsN6p1ky2o3xRghbzf9IGmUglkSSwt79-dYMz3N1nqyN1oyP5MqR_PFNtP8aOgcRWMA3HMi6JKEeShyW3-qSrDP2dBgYKIgUHkUSPpk-RjWwqLkU71qTF3gpXoy5lUi3ru8eLEnNGSg}<br/>
- <br/>
-
-REQUEST Body:
-<br/>
- <br/>
-
-RESPONSE code:
-200<br/>
- <br/>
-
-RESPONSE body:
-[
-    {
-        "userId": "7c1026e8-0e1f-47a1-8259-78570ada53dd",
-        "equipmentId": "e562306d-125f-31fd-9e98-ccb409073e84"
-    }
-]<br/>
- <br/>
-
-RESPONSE time (ms):
-350<br/>
- <br/>
- ---------------------------------- <br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>com.automation.api.tests.activity.UtilizationTests@5c33f1a9</td></tr>
-<tr>
-<td title='com.automation.api.tests.activity.UtilizationTests.activity_v1_equipment_equipmentId_sessions()'><b>activity_v1_equipment_equipmentId_sessions</b><br>Test class: com.automation.api.tests.activity.UtilizationTests<br>Parameters: {ExpectedStatusCode=200, Description=Get equipment session, schemaValidationFile=getEquipmentSurvey.json, preRequisite=Get random equipmentId, Run=Y, TCID=1, Uri=/activity/v1/equipment/{equipmentId}/sessions?pageSize=50&startTimestamp=2021-5-1&endTimestamp=2022-5-1, HttpMethod=GET, Notes=}<br/>
-<a href="#Output-1343838143" onClick='toggleBox("Output-1343838143", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1343838143" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1343838143">
-
-TestCase:
-Get equipment session<br/>
- <br/>
-
-REQUEST Method:
-GET<br/>
- <br/>
-
-REQUEST url:
-https://api.zone1.development.crown.com/activity/v1/equipment?startTimestamp=2022-1-21&endTimestamp=2022-7-21<br/>
- <br/>
-
-REQUEST Headers:
-{Authorization=Bearer eyJraWQiOiI2ZGU4ZWY4MTEyOGVhM2M5MDE4MDgwMWY2YzY3Yjc5ZGJkNmI4MzFhMmEzMTA0M2NmZTRlMmM0M2QzZmNjMzA4IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1OTUyNCIsInpvbmVpbmZvIjoiQW1lcmljYVwvTmV3X1lvcmsiLCJpc3MiOiJodHRwczpcL1wvYXV0aC56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJsb2NhbGUiOiJlbiIsImp3dFR5cGUiOiJBUEkiLCJjbGllbnRfaWQiOiIzZWJhNTY3YS0yYWRjLTRiZjQtYjE4ZS01NmM5MGUwZmNhZTgiLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL2N1c3RvbWVyU2VsZWN0ZWQiOmZhbHNlLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VvbSI6Ik1FVFJJQyIsInVvbSI6Ik1FVFJJQyIsImN1c3RvbWVySWQiOjE4MiwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9lbWFpbCI6ImVkZGllLmxlZ2crMUBsZWFkaW5nZWRqZS5jb20iLCJleHAiOjE2NTg0NDY1ODgsImlhdCI6MTY1ODQzMjE4OCwiZW1haWwiOiJlZGRpZS5sZWdnKzFAbGVhZGluZ2VkamUuY29tIiwianRpIjoiNzhhZWMyYjYtNjJmZi00NjQyLWExNTktNGIxZjZlMWI2NTk0IiwiYXBwcyI6WyJ0d293YXktbWVzc2FnZSIsImRldmVsb3Blci1wb3J0YWwiLCJwZW9wbGUiXSwic2NwIjpbImlsNjpnbG9iYWwiXSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9jdXN0b21lcklkIjoxODIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvbG9jYWxlIjoiZW4iLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VzZXJUeXBlIjoiVVNFUiIsImF1ZCI6ImFwaS56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJjdXN0b21lclNlbGVjdGVkIjpmYWxzZSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC91c2VySWQiOiI1OTUyNCIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvand0VHlwZSI6IkFQSSIsInVzZXJUeXBlIjoiVVNFUiIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvem9uZWluZm8iOiJBbWVyaWNhXC9OZXdfWW9yayJ9.Xnbz1jyyaHh7sq23NMZdAK944RxBct69xZI7TeRgTuX0PE0EAucfg9PdqOrntcofgpm0i_FHN00Zd2_aIHxr-ghmJjgJ-h157GZAcWYVcABykcjskTiXEVGl6VKyeStppuEM68MatpjjZ5mwGaoS_-aOvSKajY9MRbJUCqLiqFCbt1F7MF2nMKpL8GLvWtc9HhbZxVtAUsxIr91z8R-yv5BoLd8J3xyRrDi_YjsEpORxDhCNyAQ-VDncc6jk-_smq9G4DfFx-RoCvm3RN5dU62TCYwZ4e-XAJ0yvSS0fd8fc71ZhBcxfMNoKwMY8BZgOq1yBjsx9ifnuzFf_jZx_PA}<br/>
- <br/>
-
-REQUEST Body:
-<br/>
- <br/>
-
-RESPONSE code:
-200<br/>
- <br/>
-
-RESPONSE body:
-[
-    {
-        "equipmentId": "e562306d-125f-31fd-9e98-ccb409073e84",
-        "lastLoginTimestamp": {
-            "dateTime": "2022-04-01T14:44:08.000+0000",
-            "zone": "UTC"
-        }
-    }
-]<br/>
- <br/>
-
-RESPONSE time (ms):
-348<br/>
- <br/>
- ---------------------------------- <br/>
-
-TestCase:
-Get equipment session<br/>
- <br/>
-
-REQUEST Method:
-GET<br/>
- <br/>
-
-REQUEST url:
-https://api.zone1.development.crown.com/activity/v1/equipment/e562306d-125f-31fd-9e98-ccb409073e84/sessions?pageSize=50&startTimestamp=2021-5-1&endTimestamp=2022-5-1<br/>
- <br/>
-
-REQUEST Headers:
-{Authorization=Bearer eyJraWQiOiI2ZGU4ZWY4MTEyOGVhM2M5MDE4MDgwMWY2YzY3Yjc5ZGJkNmI4MzFhMmEzMTA0M2NmZTRlMmM0M2QzZmNjMzA4IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1OTUyNCIsInpvbmVpbmZvIjoiQW1lcmljYVwvTmV3X1lvcmsiLCJpc3MiOiJodHRwczpcL1wvYXV0aC56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJsb2NhbGUiOiJlbiIsImp3dFR5cGUiOiJBUEkiLCJjbGllbnRfaWQiOiIzZWJhNTY3YS0yYWRjLTRiZjQtYjE4ZS01NmM5MGUwZmNhZTgiLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL2N1c3RvbWVyU2VsZWN0ZWQiOmZhbHNlLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VvbSI6Ik1FVFJJQyIsInVvbSI6Ik1FVFJJQyIsImN1c3RvbWVySWQiOjE4MiwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9lbWFpbCI6ImVkZGllLmxlZ2crMUBsZWFkaW5nZWRqZS5jb20iLCJleHAiOjE2NTg0NDY1ODksImlhdCI6MTY1ODQzMjE4OSwiZW1haWwiOiJlZGRpZS5sZWdnKzFAbGVhZGluZ2VkamUuY29tIiwianRpIjoiY2VkNTRlZWEtOGQ3My00NmY5LTlkMGItZTU0YTFlOGYzZGNmIiwiYXBwcyI6WyJ0d293YXktbWVzc2FnZSIsImRldmVsb3Blci1wb3J0YWwiLCJwZW9wbGUiXSwic2NwIjpbImlsNjpnbG9iYWwiXSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9jdXN0b21lcklkIjoxODIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvbG9jYWxlIjoiZW4iLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VzZXJUeXBlIjoiVVNFUiIsImF1ZCI6ImFwaS56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJjdXN0b21lclNlbGVjdGVkIjpmYWxzZSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC91c2VySWQiOiI1OTUyNCIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvand0VHlwZSI6IkFQSSIsInVzZXJUeXBlIjoiVVNFUiIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvem9uZWluZm8iOiJBbWVyaWNhXC9OZXdfWW9yayJ9.Dq7dJ2mEMLfkoS42bQCdHczho1HjdLgDMcL5mot1RRqRuyiZDNKqRbbixYJM5-MmfP8NvfAIvWBKJ0x92iQ60Z1ngUOSpqjOj9mKJ9bNyBEibkpxQdizLzsklkDhzP-Pdotdh1pSRq5SemxiBhtGrQutjsBM58h1zSn30S_-p31YCixZ-0iX93MEs77wpZhfqrkOVP1H_UaUL1Yr0hVsqvydN-Icyk1bcG6Msqlqq7fC2rkwxY0e7UrNmHdpFURE1hZj9heLhtyj5UtcjzWi9AsAzFy6jlRsPYfLXGG9cZ3_nQkiKhPfLTulOLAtGsS7_UWs_vfHiAMDlXwB3iFTLg}<br/>
- <br/>
-
-REQUEST Body:
-<br/>
- <br/>
-
-RESPONSE code:
-200<br/>
- <br/>
-
-RESPONSE body:
-[
-    {
-        "sessionId": "c10546c2-9353-4a53-b1c6-f679e5604c20",
-        "userId": "7c1026e8-0e1f-47a1-8259-78570ada53dd",
-        "locationId": "649dce9e-ee11-4c83-8bd5-56cccdcc6031",
-        "equipmentId": "e562306d-125f-31fd-9e98-ccb409073e84",
-        "startSessionTimestamp": {
-            "dateTime": "2022-04-01T14:31:09.000+0000",
-            "zone": "UTC"
-        },
-        "endSessionTimestamp": {
-            "dateTime": "2022-04-01T14:32:01.000+0000",
-            "zone": "UTC"
-        },
-        "systemLogoff": false,
-        "activitySummary": {
-            "totalLogonTime": 52,
-            "workTime": 1,
-            "travelTime": 0,
-            "hydraulicTime": 1,
-            "blendingTime": 0,
-            "stoppedTime": 10,
-            "noOperatorTime": 41,
-            "idleTime": 51,
-            "distanceTraveled": 148118,
-            "averageSpeed": 0.0
+        &quot;userId&quot;: &quot;bfc105b5-7ae6-432d-ae13-db2a3096a0c9&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-15T15:31:59.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
         }
     },
     {
-        "sessionId": "cc93209f-7cc6-4115-8693-bf199f42d168",
-        "userId": "7c1026e8-0e1f-47a1-8259-78570ada53dd",
-        "locationId": "649dce9e-ee11-4c83-8bd5-56cccdcc6031",
-        "equipmentId": "e562306d-125f-31fd-9e98-ccb409073e84",
-        "startSessionTimestamp": {
-            "dateTime": "2022-04-01T14:44:08.000+0000",
-            "zone": "UTC"
-        },
-        "endSessionTimestamp": {
-            "dateTime": "2022-04-01T14:44:21.000+0000",
-            "zone": "UTC"
-        },
-        "systemLogoff": false,
-        "activitySummary": {
-            "totalLogonTime": 13,
-            "workTime": 0,
-            "travelTime": 0,
-            "hydraulicTime": 0,
-            "blendingTime": 0,
-            "stoppedTime": 0,
-            "noOperatorTime": 13,
-            "idleTime": 13,
-            "distanceTraveled": 0,
-            "averageSpeed": 0.0
+        &quot;userId&quot;: &quot;2a2a3a9b-736c-483b-9b24-059ecc4bdb9f&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-17T15:32:45.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
         }
-    }
-]<br/>
- <br/>
-
-RESPONSE time (ms):
-432<br/>
- <br/>
- ---------------------------------- <br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>com.automation.api.tests.activity.UtilizationTests@5c33f1a9</td></tr>
-<tr>
-<td title='com.automation.api.tests.activity.UtilizationTests.activity_v1_equipment_equipmentId_summary()'><b>activity_v1_equipment_equipmentId_summary</b><br>Test class: com.automation.api.tests.activity.UtilizationTests<br>Parameters: {ExpectedStatusCode=200, Description=Get equipment activity survey, schemaValidationFile=getEquipmentSurvey.json, preRequisite=Get random equipmentId, Run=Y, TCID=1, Uri=/activity/v1/equipment/{equipmentId}/summary?pageSize=50&startTimestamp=2021-5-1&endTimestamp=2022-5-1, HttpMethod=GET, Notes=}<br/>
-<a href="#Output-321795476" onClick='toggleBox("Output-321795476", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-321795476" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-321795476">
-
-TestCase:
-Get equipment activity survey<br/>
- <br/>
-
-REQUEST Method:
-GET<br/>
- <br/>
-
-REQUEST url:
-https://api.zone1.development.crown.com/activity/v1/equipment?startTimestamp=2022-1-21&endTimestamp=2022-7-21<br/>
- <br/>
-
-REQUEST Headers:
-{Authorization=Bearer eyJraWQiOiI2ZGU4ZWY4MTEyOGVhM2M5MDE4MDgwMWY2YzY3Yjc5ZGJkNmI4MzFhMmEzMTA0M2NmZTRlMmM0M2QzZmNjMzA4IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1OTUyNCIsInpvbmVpbmZvIjoiQW1lcmljYVwvTmV3X1lvcmsiLCJpc3MiOiJodHRwczpcL1wvYXV0aC56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJsb2NhbGUiOiJlbiIsImp3dFR5cGUiOiJBUEkiLCJjbGllbnRfaWQiOiIzZWJhNTY3YS0yYWRjLTRiZjQtYjE4ZS01NmM5MGUwZmNhZTgiLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL2N1c3RvbWVyU2VsZWN0ZWQiOmZhbHNlLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VvbSI6Ik1FVFJJQyIsInVvbSI6Ik1FVFJJQyIsImN1c3RvbWVySWQiOjE4MiwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9lbWFpbCI6ImVkZGllLmxlZ2crMUBsZWFkaW5nZWRqZS5jb20iLCJleHAiOjE2NTg0NDY1OTAsImlhdCI6MTY1ODQzMjE5MCwiZW1haWwiOiJlZGRpZS5sZWdnKzFAbGVhZGluZ2VkamUuY29tIiwianRpIjoiMDE4YzM3OTYtZDRlNS00MGZmLWFlODEtMjYzMDRkYjJjNzJlIiwiYXBwcyI6WyJ0d293YXktbWVzc2FnZSIsImRldmVsb3Blci1wb3J0YWwiLCJwZW9wbGUiXSwic2NwIjpbImlsNjpnbG9iYWwiXSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9jdXN0b21lcklkIjoxODIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvbG9jYWxlIjoiZW4iLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VzZXJUeXBlIjoiVVNFUiIsImF1ZCI6ImFwaS56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJjdXN0b21lclNlbGVjdGVkIjpmYWxzZSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC91c2VySWQiOiI1OTUyNCIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvand0VHlwZSI6IkFQSSIsInVzZXJUeXBlIjoiVVNFUiIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvem9uZWluZm8iOiJBbWVyaWNhXC9OZXdfWW9yayJ9.nvPIamI-v-FGyq-QcdDkUal2PoX6tdR9I04ZtM3MAv4YkxZKS3Z8FscphNQbPKkpA7rRQKTrUhONykCuMd_eouyEInPE4HjaZOUznqfuDIXVt8bCCzVMwqjJor4jcCDuM2K7_n0O2yMANU92Pv1oq1dU5sQ_r0nYUM_9IhRPoqcKpm6k6Qegduq6-R7BzKbYUUOgECaEnPXqZl4Em65enCE_uMczRiVC2uGW9vHkLxHhOvuZ2uQp6uacPMUQJm1Y-saapKyZVRpg6b5A6scqLb9SU0bYvQJ3syYgeSLyBS64lwC2Le4AUkEEQ73AkC61QG7pQ6u1Uw9zTaInlS517g}<br/>
- <br/>
-
-REQUEST Body:
-<br/>
- <br/>
-
-RESPONSE code:
-200<br/>
- <br/>
-
-RESPONSE body:
-[
+    },
     {
-        "equipmentId": "e562306d-125f-31fd-9e98-ccb409073e84",
-        "lastLoginTimestamp": {
-            "dateTime": "2022-04-01T14:44:08.000+0000",
-            "zone": "UTC"
+        &quot;userId&quot;: &quot;3c8e366b-c33b-4b33-b6de-74ca5417b431&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-17T19:17:37.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;bb231dd1-40e2-4047-b506-98c708bfeece&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-17T20:45:45.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;92ac5937-14dd-429a-81b4-1bec972ede4d&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-17T23:00:16.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;15bedb80-6674-4d7e-b0b4-117f19ae833d&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-18T01:53:45.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;47464da7-d279-4fb7-b1d5-577dd2b69302&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-23T22:58:18.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;3187513e-a1b4-4d56-bb3e-3883a7101125&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-24T01:01:15.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;7335a928-0d50-40ec-8660-68d9f5cafe3a&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-24T11:14:47.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;7e8b6b12-1e14-45e0-b507-235f22ca5ac5&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-28T21:57:37.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;f0aeedd4-0c4b-4836-a79f-e19082dcf142&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-10-01T02:29:08.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;35738848-5d75-4a61-a587-1b3d6e34ce2f&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-10-02T14:57:40.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;75c6e127-1e7d-4291-bec2-0e2dbcb03406&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-10-02T21:18:23.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;77cc00e2-08b8-44dc-96a5-58068ec77176&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2021-01-22T19:28:32.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;2811c5bb-2a15-48ba-a015-ee3997e93f94&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2021-08-19T14:04:50.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;e4f8131a-3c27-4b2c-ae7b-7f885233512b&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2021-09-26T23:25:09.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;f4095042-56a5-4699-a32b-b645c166a09a&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2022-01-20T14:05:35.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;7c1026e8-0e1f-47a1-8259-78570ada53dd&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2022-04-01T14:44:08.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
         }
     }
-]<br/>
- <br/>
+]
 
-RESPONSE time (ms):
-367<br/>
- <br/>
- ---------------------------------- <br/>
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:98)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.automation.api.tests.TestBase.doSchemaValidation(TestBase.java:61)
+	at com.automation.api.tests.activity.ProductivityTests.get_activity_v1_users(ProductivityTests.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2142852357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2142852357'><pre>java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties ([&quot;equipmentId&quot;])
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/items/0&quot;}
+    instance: {&quot;pointer&quot;:&quot;/0&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;required&quot;
+    required: [&quot;equipmentId&quot;,&quot;lastLoginTimestamp&quot;,&quot;userId&quot;]
+    missing: [&quot;equipmentId&quot;]
 
-TestCase:
-Get equipment activity survey<br/>
- <br/>
+  Actual: [
+    {
+        &quot;userId&quot;: &quot;bfc105b5-7ae6-432d-ae13-db2a3096a0c9&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-15T15:31:59.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;2a2a3a9b-736c-483b-9b24-059ecc4bdb9f&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-17T15:32:45.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;3c8e366b-c33b-4b33-b6de-74ca5417b431&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-17T19:17:37.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;bb231dd1-40e2-4047-b506-98c708bfeece&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-17T20:45:45.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;92ac5937-14dd-429a-81b4-1bec972ede4d&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-17T23:00:16.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;15bedb80-6674-4d7e-b0b4-117f19ae833d&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-18T01:53:45.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;47464da7-d279-4fb7-b1d5-577dd2b69302&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-23T22:58:18.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;3187513e-a1b4-4d56-bb3e-3883a7101125&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-24T01:01:15.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;7335a928-0d50-40ec-8660-68d9f5cafe3a&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-24T11:14:47.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;7e8b6b12-1e14-45e0-b507-235f22ca5ac5&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-09-28T21:57:37.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;f0aeedd4-0c4b-4836-a79f-e19082dcf142&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-10-01T02:29:08.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;35738848-5d75-4a61-a587-1b3d6e34ce2f&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-10-02T14:57:40.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;75c6e127-1e7d-4291-bec2-0e2dbcb03406&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2020-10-02T21:18:23.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;77cc00e2-08b8-44dc-96a5-58068ec77176&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2021-01-22T19:28:32.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;2811c5bb-2a15-48ba-a015-ee3997e93f94&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2021-08-19T14:04:50.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;e4f8131a-3c27-4b2c-ae7b-7f885233512b&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2021-09-26T23:25:09.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;f4095042-56a5-4699-a32b-b645c166a09a&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2022-01-20T14:05:35.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    },
+    {
+        &quot;userId&quot;: &quot;7c1026e8-0e1f-47a1-8259-78570ada53dd&quot;,
+        &quot;lastLoginTimestamp&quot;: {
+            &quot;dateTime&quot;: &quot;2022-04-01T14:44:08.000+0000&quot;,
+            &quot;zone&quot;: &quot;UTC&quot;
+        }
+    }
+]
 
-REQUEST Method:
-GET<br/>
- <br/>
-
-REQUEST url:
-https://api.zone1.development.crown.com/activity/v1/equipment/e562306d-125f-31fd-9e98-ccb409073e84/summary?pageSize=50&startTimestamp=2021-5-1&endTimestamp=2022-5-1<br/>
- <br/>
-
-REQUEST Headers:
-{Authorization=Bearer eyJraWQiOiI2ZGU4ZWY4MTEyOGVhM2M5MDE4MDgwMWY2YzY3Yjc5ZGJkNmI4MzFhMmEzMTA0M2NmZTRlMmM0M2QzZmNjMzA4IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI1OTUyNCIsInpvbmVpbmZvIjoiQW1lcmljYVwvTmV3X1lvcmsiLCJpc3MiOiJodHRwczpcL1wvYXV0aC56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJsb2NhbGUiOiJlbiIsImp3dFR5cGUiOiJBUEkiLCJjbGllbnRfaWQiOiIzZWJhNTY3YS0yYWRjLTRiZjQtYjE4ZS01NmM5MGUwZmNhZTgiLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL2N1c3RvbWVyU2VsZWN0ZWQiOmZhbHNlLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VvbSI6Ik1FVFJJQyIsInVvbSI6Ik1FVFJJQyIsImN1c3RvbWVySWQiOjE4MiwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9lbWFpbCI6ImVkZGllLmxlZ2crMUBsZWFkaW5nZWRqZS5jb20iLCJleHAiOjE2NTg0NDY1OTEsImlhdCI6MTY1ODQzMjE5MSwiZW1haWwiOiJlZGRpZS5sZWdnKzFAbGVhZGluZ2VkamUuY29tIiwianRpIjoiYTRkMWQxOGMtMjAwNS00NDQxLWIxNWYtNmVhNDQyZDU1OGZkIiwiYXBwcyI6WyJ0d293YXktbWVzc2FnZSIsImRldmVsb3Blci1wb3J0YWwiLCJwZW9wbGUiXSwic2NwIjpbImlsNjpnbG9iYWwiXSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC9jdXN0b21lcklkIjoxODIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvbG9jYWxlIjoiZW4iLCJodHRwczpcL1wvaW5mb2xpbmsuY3Jvd25cL3VzZXJUeXBlIjoiVVNFUiIsImF1ZCI6ImFwaS56b25lMS5kZXZlbG9wbWVudC5jcm93bi5jb20iLCJjdXN0b21lclNlbGVjdGVkIjpmYWxzZSwiaHR0cHM6XC9cL2luZm9saW5rLmNyb3duXC91c2VySWQiOiI1OTUyNCIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvand0VHlwZSI6IkFQSSIsInVzZXJUeXBlIjoiVVNFUiIsImh0dHBzOlwvXC9pbmZvbGluay5jcm93blwvem9uZWluZm8iOiJBbWVyaWNhXC9OZXdfWW9yayJ9.E5-OcwfplCY7ISVVb8dm8RQsMfz-0CQXBBJ5HDTAmb3Fc9iToga-ZqB_ukzvIv7rKV6WI9XFM6nOW_IY0mVPq_QXkgesGjDQT8X_Y9ePu4XPpkrC6J3VAnx09D3BprVSfWQKRGk_ev5XAnAgN5W_R3Yd4bh9xD9r8LBZ1D35agZNrLEZL_OrQV5x2IJGFXItmaz2D5kNOhuMNfAuIl12iIsbNvVVLv7PbmWO2SW_ur4uE7JFzzM2DQIU8IVkXv95M9x-Ptk6SS-0r1AwJTGFVfCY41pbDK-fpf0o7eZc86YovHe44nsYEqFaDymop5y5XGNpc3fsB1x_kmCid6QyUg}<br/>
- <br/>
-
-REQUEST Body:
-<br/>
- <br/>
-
-RESPONSE code:
-200<br/>
- <br/>
-
-RESPONSE body:
-{
-    "totalLogonTime": 65,
-    "workTime": 1,
-    "travelTime": 0,
-    "hydraulicTime": 1,
-    "blendingTime": 0,
-    "stoppedTime": 10,
-    "noOperatorTime": 54,
-    "idleTime": 64,
-    "distanceTraveled": 148118,
-    "averageSpeed": 0.0
-}<br/>
- <br/>
-
-RESPONSE time (ms):
-524<br/>
- <br/>
- ---------------------------------- <br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>com.automation.api.tests.activity.UtilizationTests@5c33f1a9</td></tr>
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:98)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.automation.api.tests.TestBase.doSchemaValidation(TestBase.java:61)
+	at com.automation.api.tests.activity.ProductivityTests.get_activity_v1_users(ProductivityTests.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>3</td>
+<td>com.automation.api.tests.activity.ProductivityTests@131774fe</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,12 +1,16 @@
 package com.automation.api.tests;
 
 import com.automation.api.utils.PropertiesUtil;
+import io.restassured.response.Response;
 import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class TestBase {
 
@@ -38,13 +42,22 @@ public class TestBase {
     }
 
     public boolean schemaValidationFileInExcel() {
-        return System.getProperty("schemaValidationFile").equals("");
+        //If the schemaValidationFile coulmn in the excel sheet is not empty, return true; else false
+        return !System.getProperty("schemaValidationFile").equals("");
     }
 
-    public void doSchemaValidation(String nameOfApi) {
+    public void doSchemaValidation(Response response, String nameOfApi) {
+
+        String schemaFileLocation = System.getProperty("user.dir")  + "\\src\\test\\resources\\schemaValidations\\"
+                + nameOfApi + "\\"
+                + System.getProperty("schemaValidationFile");
+
         File file = new File(System.getProperty("user.dir")
                 + "/src/test/resources/schemaValidations/"
                 + nameOfApi + "/"
                 + System.getProperty("schemaValidationFile"));
+
+        response.then()
+                .assertThat().body(matchesJsonSchema(file));
     }
 }

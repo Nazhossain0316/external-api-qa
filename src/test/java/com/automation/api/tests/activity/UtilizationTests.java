@@ -42,7 +42,7 @@ public class UtilizationTests extends TestBase {
 
         //Validate Schema if the schema column has a file Name
         if (schemaValidationFileInExcel()) {
-            doSchemaValidation("activity_utilization");
+            doSchemaValidation(response, "activity_utilization");
         }
     }
 
@@ -76,7 +76,7 @@ public class UtilizationTests extends TestBase {
 
         //Validate Schema if the schema column has a file Name
         if (schemaValidationFileInExcel()) {
-            doSchemaValidation("activity_utilization");
+            doSchemaValidation(response,"activity_utilization");
         }
     }
 
@@ -110,7 +110,7 @@ public class UtilizationTests extends TestBase {
 
         //Validate Schema if the schema column has a file Name
         if (schemaValidationFileInExcel()) {
-            doSchemaValidation("activity_utilization");
+            doSchemaValidation(response, "activity_utilization");
         }
     }
 
@@ -144,7 +144,7 @@ public class UtilizationTests extends TestBase {
 
         //Validate Schema if the schema column has a file Name
         if (schemaValidationFileInExcel()) {
-            doSchemaValidation("activity_utilization");
+            doSchemaValidation(response, "activity_utilization");
         }
     }
 

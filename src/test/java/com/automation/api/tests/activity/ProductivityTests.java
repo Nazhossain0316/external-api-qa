@@ -45,7 +45,7 @@ public class ProductivityTests extends TestBase {
 
         //Validate Schema is the schema column has a file Name
         if (schemaValidationFileInExcel()) {
-            doSchemaValidation("activity_productivity");
+            doSchemaValidation(response, "activity_productivity");
         }
     }
 
@@ -78,7 +78,7 @@ public class ProductivityTests extends TestBase {
 
         //Validate Schema is the schema column has a file Name
         if (schemaValidationFileInExcel()) {
-            doSchemaValidation("activity_productivity");
+            doSchemaValidation(response, "activity_productivity");
         }
     }
 
@@ -111,7 +111,7 @@ public class ProductivityTests extends TestBase {
 
         //Validate Schema is the schema column has a file Name
         if (schemaValidationFileInExcel()) {
-            doSchemaValidation("activity_productivity");
+            doSchemaValidation(response, "activity_productivity");
         }
     }
 
@@ -144,7 +144,7 @@ public class ProductivityTests extends TestBase {
 
         //Validate Schema is the schema column has a file Name
         if (schemaValidationFileInExcel()) {
-            doSchemaValidation("activity_productivity");
+            doSchemaValidation(response, "activity_productivity");
         }
     }
 
@@ -177,7 +177,7 @@ public class ProductivityTests extends TestBase {
 
         //Validate Schema is the schema column has a file Name
         if (schemaValidationFileInExcel()) {
-            doSchemaValidation("activity_productivity");
+            doSchemaValidation(response, "activity_productivity");
         }
     }
 
@@ -213,7 +213,7 @@ public class ProductivityTests extends TestBase {
 
         //Validate Schema is the schema column has a file Name
         if (schemaValidationFileInExcel()) {
-            doSchemaValidation("activity_productivity");
+            doSchemaValidation(response, "activity_productivity");
         }
     }
 
