@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">2</div>
+<div class="counter">21</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">6</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">4.610s</div>
+<div class="counter">17.873s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">71%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,13 +58,45 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Packages</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Classes</a>
+<a href="#tab1">Packages</a>
+</li>
+<li>
+<a href="#tab2">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/com.automation.api.tests.activity.ProductivityTests.html">ProductivityTests</a>.
+<a href="classes/com.automation.api.tests.activity.ProductivityTests.html#get_activity_v1_users[0]({ExpectedStatusCode=200, Description=Get User Activity Survey, schemaValidationFile=GET_activity_v1_users.json, preRequisite=, Run=Y, TCID=1, Uri=/activity/v1/users?startTimestamp=2020-5-1&amp;endTimestamp=2022-5-1&amp;pageSize=100, HttpMethod=GET, Notes=})">get_activity_v1_users[0]({ExpectedStatusCode=200, Description=Get User Activity Survey, schemaValidationFile=GET_activity_v1_users.json, preRequisite=, Run=Y, TCID=1, Uri=/activity/v1/users?startTimestamp=2020-5-1&amp;endTimestamp=2022-5-1&amp;pageSize=100, HttpMethod=GET, Notes=})</a>
+</li>
+<li>
+<a href="classes/com.automation.api.tests.activity.ProductivityTests.html">ProductivityTests</a>.
+<a href="classes/com.automation.api.tests.activity.ProductivityTests.html#get_activity_v1_users[3]({ExpectedStatusCode=200, Description=Get User Activity without pageSize param, schemaValidationFile=GET_activity_v1_users.json, preRequisite=, Run=Y, TCID=4, Uri=/activity/v1/users?startTimestamp=2020-5-1&amp;endTimestamp=2022-5-1, HttpMethod=GET, Notes=PageSize is listed as a mandatory query on swagger but by default the server will provide a fault pageSIze if one is not provided by the client})">get_activity_v1_users[3]({ExpectedStatusCode=200, Description=Get User Activity without pageSize param, schemaValidationFile=GET_activity_v1_users.json, preRequisite=, Run=Y, TCID=4, Uri=/activity/v1/users?startTimestamp=2020-5-1&amp;endTimestamp=2022-5-1, HttpMethod=GET, Notes=PageSize is listed as a mandatory query on swagger but by default the server will provide a fault pageSIze if one is not provided by the client})</a>
+</li>
+<li>
+<a href="classes/com.automation.api.tests.activity.ProductivityTests.html">ProductivityTests</a>.
+<a href="classes/com.automation.api.tests.activity.ProductivityTests.html#get_activity_v1_users[4]({ExpectedStatusCode=200, Description=Get User Activity with pageSize=1, schemaValidationFile=GET_activity_v1_users.json, preRequisite=, Run=Y, TCID=5, Uri=/activity/v1/users?startTimestamp=2020-5-1&amp;endTimestamp=2022-5-1&amp;pageSize=1, HttpMethod=GET, Notes=})">get_activity_v1_users[4]({ExpectedStatusCode=200, Description=Get User Activity with pageSize=1, schemaValidationFile=GET_activity_v1_users.json, preRequisite=, Run=Y, TCID=5, Uri=/activity/v1/users?startTimestamp=2020-5-1&amp;endTimestamp=2022-5-1&amp;pageSize=1, HttpMethod=GET, Notes=})</a>
+</li>
+<li>
+<a href="classes/com.automation.api.tests.activity.ProductivityTests.html">ProductivityTests</a>.
+<a href="classes/com.automation.api.tests.activity.ProductivityTests.html#get_activity_v1_users_userId_lastLogin[0]({ExpectedStatusCode=200, Description=Get Last Login, schemaValidationFile=GET_last_login.json, preRequisite=Get valid userId from Activity API, Run=Y, TCID=1, Uri=/activity/v1/users/{userId}/last-logins, HttpMethod=GET, Notes=The response does not return startSessionTimestamp field as expected by the swagger doc})">get_activity_v1_users_userId_lastLogin[0]({ExpectedStatusCode=200, Description=Get Last Login, schemaValidationFile=GET_last_login.json, preRequisite=Get valid userId from Activity API, Run=Y, TCID=1, Uri=/activity/v1/users/{userId}/last-logins, HttpMethod=GET, Notes=The response does not return startSessionTimestamp field as expected by the swagger doc})</a>
+</li>
+<li>
+<a href="classes/com.automation.api.tests.activity.UtilizationTests.html">UtilizationTests</a>.
+<a href="classes/com.automation.api.tests.activity.UtilizationTests.html#activity_v1_equipment[0]({ExpectedStatusCode=200, Description=Get equipment activity survey, schemaValidationFile=GET_equipment.json, preRequisite=, Run=Y, TCID=1, Uri=/activity/v1/equipment?pageSize=50&amp;startTimestamp=2021-5-1&amp;endTimestamp=2022-5-1, HttpMethod=GET, Notes=})">activity_v1_equipment[0]({ExpectedStatusCode=200, Description=Get equipment activity survey, schemaValidationFile=GET_equipment.json, preRequisite=, Run=Y, TCID=1, Uri=/activity/v1/equipment?pageSize=50&amp;startTimestamp=2021-5-1&amp;endTimestamp=2022-5-1, HttpMethod=GET, Notes=})</a>
+</li>
+<li>
+<a href="classes/com.automation.api.tests.activity.UtilizationTests.html">UtilizationTests</a>.
+<a href="classes/com.automation.api.tests.activity.UtilizationTests.html#activity_v1_equipment_equipmentId_lastLogins[0]({ExpectedStatusCode=200, Description=Get Last Logins by Equipment ID, schemaValidationFile=GET_last_login.json, preRequisite=Get random equipmentId, Run=Y, TCID=1, Uri=/activity/v1/equipment/{equipmentId}/last-logins?pageSize=50&amp;startTimestamp=2021-5-1&amp;endTimestamp=2022-5-1, HttpMethod=GET, Notes=})">activity_v1_equipment_equipmentId_lastLogins[0]({ExpectedStatusCode=200, Description=Get Last Logins by Equipment ID, schemaValidationFile=GET_last_login.json, preRequisite=Get random equipmentId, Run=Y, TCID=1, Uri=/activity/v1/equipment/{equipmentId}/last-logins?pageSize=50&amp;startTimestamp=2021-5-1&amp;endTimestamp=2022-5-1, HttpMethod=GET, Notes=})</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -79,19 +111,29 @@
 </thead>
 <tbody>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="packages/com.automation.api.tests.activity.html">com.automation.api.tests.activity</a>
 </td>
-<td>2</td>
+<td>17</td>
+<td>6</td>
+<td>0</td>
+<td>13.845s</td>
+<td class="failures">64%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/com.automation.api.tests.impact.html">com.automation.api.tests.impact</a>
+</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
-<td>4.610s</td>
+<td>4.028s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -106,13 +148,33 @@
 </thead>
 <tbody>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="classes/com.automation.api.tests.activity.ProductivityTests.html">com.automation.api.tests.activity.ProductivityTests</a>
 </td>
+<td>13</td>
+<td>4</td>
+<td>0</td>
+<td>9.942s</td>
+<td class="failures">69%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/com.automation.api.tests.activity.UtilizationTests.html">com.automation.api.tests.activity.UtilizationTests</a>
+</td>
+<td>4</td>
 <td>2</td>
 <td>0</td>
+<td>3.903s</td>
+<td class="failures">50%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.automation.api.tests.impact.ImpactTests.html">com.automation.api.tests.impact.ImpactTests</a>
+</td>
+<td>4</td>
 <td>0</td>
-<td>4.610s</td>
+<td>0</td>
+<td>4.028s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
@@ -126,7 +188,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at Jul 22, 2022, 3:17:39 PM</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at Jul 22, 2022, 4:30:30 PM</p>
 </div>
 </div>
 </body>

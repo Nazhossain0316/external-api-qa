@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "totalLogonTime": {
+      "type": "integer"
+    },
+    "workTime": {
+      "type": "integer"
+    },
+    "travelTime": {
+      "type": "integer"
+    },
+    "hydraulicTime": {
+      "type": "integer"
+    },
+    "blendingTime": {
+      "type": "integer"
+    },
+    "stoppedTime": {
+      "type": "integer"
+    },
+    "noOperatorTime": {
+      "type": "integer"
+    },
+    "idleTime": {
+      "type": "integer"
+    },
+    "distanceTraveled": {
+      "type": "integer"
+    },
+    "averageSpeed": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "totalLogonTime",
+    "workTime",
+    "travelTime",
+    "hydraulicTime",
+    "blendingTime",
+    "stoppedTime",
+    "noOperatorTime",
+    "idleTime",
+    "distanceTraveled",
+    "averageSpeed"
+  ]
+}

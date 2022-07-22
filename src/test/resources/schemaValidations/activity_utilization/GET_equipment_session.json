@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "sessionId": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "locationId": {
+          "type": "string"
+        },
+        "equipmentId": {
+          "type": "string"
+        },
+        "startSessionTimestamp": {
+          "type": "object",
+          "properties": {
+            "dateTime": {
+              "type": "string"
+            },
+            "zone": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "dateTime",
+            "zone"
+          ]
+        },
+        "endSessionTimestamp": {
+          "type": "object",
+          "properties": {
+            "dateTime": {
+              "type": "string"
+            },
+            "zone": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "dateTime",
+            "zone"
+          ]
+        },
+        "systemLogoff": {
+          "type": "boolean"
+        },
+        "activitySummary": {
+          "type": "object",
+          "properties": {
+            "totalLogonTime": {
+              "type": "integer"
+            },
+            "workTime": {
+              "type": "integer"
+            },
+            "travelTime": {
+              "type": "integer"
+            },
+            "hydraulicTime": {
+              "type": "integer"
+            },
+            "blendingTime": {
+              "type": "integer"
+            },
+            "stoppedTime": {
+              "type": "integer"
+            },
+            "noOperatorTime": {
+              "type": "integer"
+            },
+            "idleTime": {
+              "type": "integer"
+            },
+            "distanceTraveled": {
+              "type": "integer"
+            },
+            "averageSpeed": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "totalLogonTime",
+            "workTime",
+            "travelTime",
+            "hydraulicTime",
+            "blendingTime",
+            "stoppedTime",
+            "noOperatorTime",
+            "idleTime",
+            "distanceTraveled",
+            "averageSpeed"
+          ]
+        }
+      },
+      "required": [
+        "sessionId",
+        "userId",
+        "locationId",
+        "equipmentId",
+        "startSessionTimestamp",
+        "endSessionTimestamp",
+        "systemLogoff",
+        "activitySummary"
+      ]
+    }
+  ]
+}
