@@ -39,6 +39,11 @@ public class UtilizationTests extends TestBase {
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
         assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
+
+        //Validate Schema if the schema column has a file Name
+        if (schemaValidationFileInExcel()) {
+            doSchemaValidation("activity_utilization");
+        }
     }
 
     @Test(dataProvider = "lastLoginData")
@@ -68,6 +73,11 @@ public class UtilizationTests extends TestBase {
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
         assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
+
+        //Validate Schema if the schema column has a file Name
+        if (schemaValidationFileInExcel()) {
+            doSchemaValidation("activity_utilization");
+        }
     }
 
     @Test(dataProvider = "equipmentSessionData")
@@ -97,8 +107,12 @@ public class UtilizationTests extends TestBase {
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
         assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
-    }
 
+        //Validate Schema if the schema column has a file Name
+        if (schemaValidationFileInExcel()) {
+            doSchemaValidation("activity_utilization");
+        }
+    }
 
     @Test(dataProvider = "equipmentSummaryData")
     public void activity_v1_equipment_equipmentId_summary(Map<Object, Object> dataSource){
@@ -127,6 +141,11 @@ public class UtilizationTests extends TestBase {
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
         assertEquals(Integer.toString(response.getStatusCode()),expectedStatusCode, "The response code did not match expected");
+
+        //Validate Schema if the schema column has a file Name
+        if (schemaValidationFileInExcel()) {
+            doSchemaValidation("activity_utilization");
+        }
     }
 
     @DataProvider(name = "equipmentData")

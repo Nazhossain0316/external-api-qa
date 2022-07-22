@@ -45,7 +45,7 @@ public class ProductivityTests extends TestBase {
 
         //Validate Schema is the schema column has a file Name
         if (schemaValidationFileInExcel()) {
-            doSchemaValidation("activity");
+            doSchemaValidation("activity_productivity");
         }
     }
 
@@ -75,6 +75,11 @@ public class ProductivityTests extends TestBase {
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
         assertEquals(Integer.toString(response.getStatusCode()), expectedStatusCode, "The response code did not match expected");
+
+        //Validate Schema is the schema column has a file Name
+        if (schemaValidationFileInExcel()) {
+            doSchemaValidation("activity_productivity");
+        }
     }
 
     @Test(dataProvider = "userSessionsData")
@@ -103,6 +108,11 @@ public class ProductivityTests extends TestBase {
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
         assertEquals(Integer.toString(response.getStatusCode()), expectedStatusCode, "The response code did not match expected");
+
+        //Validate Schema is the schema column has a file Name
+        if (schemaValidationFileInExcel()) {
+            doSchemaValidation("activity_productivity");
+        }
     }
 
     @Test(dataProvider = "simultaneousUserData")
@@ -132,6 +142,10 @@ public class ProductivityTests extends TestBase {
 
         assertEquals(Integer.toString(response.getStatusCode()), expectedStatusCode, "The response code did not match expected");
 
+        //Validate Schema is the schema column has a file Name
+        if (schemaValidationFileInExcel()) {
+            doSchemaValidation("activity_productivity");
+        }
     }
 
     @Test(dataProvider = "simultaneousUserLoginData")
@@ -160,6 +174,11 @@ public class ProductivityTests extends TestBase {
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
         assertEquals(Integer.toString(response.getStatusCode()), expectedStatusCode, "The response code did not match expected");
+
+        //Validate Schema is the schema column has a file Name
+        if (schemaValidationFileInExcel()) {
+            doSchemaValidation("activity_productivity");
+        }
     }
 
     @Test(dataProvider = "userSummaryData")
@@ -191,6 +210,11 @@ public class ProductivityTests extends TestBase {
 
         //Assertions
         assertEquals(Integer.toString(response.getStatusCode()), expectedStatusCode, "The response code did not match expected");
+
+        //Validate Schema is the schema column has a file Name
+        if (schemaValidationFileInExcel()) {
+            doSchemaValidation("activity_productivity");
+        }
     }
 
     @DataProvider(name = "surveyActivityData")
