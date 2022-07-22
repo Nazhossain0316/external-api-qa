@@ -4,6 +4,7 @@
         <classes>
             <class name="com.automation.api.tests.impact.ImpactTests" />
             <class name="com.automation.api.tests.activity.ProductivityTests" />
+            <class name="com.automation.api.tests.activity.UtilizationTests" />
         </classes>
     </test>
 </suite>

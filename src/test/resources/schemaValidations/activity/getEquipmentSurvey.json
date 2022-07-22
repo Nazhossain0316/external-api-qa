@@ -1,28 +1,33 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "properties": {
-    "equipmentId": {
-      "type": "string"
-    },
-    "lastLoginTimestamp": {
+  "type": "array",
+  "items": [
+    {
       "type": "object",
       "properties": {
-        "dateTime": {
+        "equipmentId": {
           "type": "string"
         },
-        "zone": {
-          "type": "string"
+        "lastLoginTimestamp": {
+          "type": "object",
+          "properties": {
+            "dateTime": {
+              "type": "string"
+            },
+            "zone": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "dateTime",
+            "zone"
+          ]
         }
       },
       "required": [
-        "dateTime",
-        "zone"
+        "equipmentId",
+        "lastLoginTimestamp"
       ]
     }
-  },
-  "required": [
-    "equipmentId",
-    "lastLoginTimestamp"
   ]
 }
