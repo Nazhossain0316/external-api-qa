@@ -3,6 +3,8 @@ package com.automation.api.utils;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import io.restassured.response.Response;
 import org.testng.Reporter;
+
+import java.sql.SQLOutput;
 import java.util.Map;
 import static io.restassured.RestAssured.given;
 
@@ -11,6 +13,7 @@ public class Request {
     public static Response makeRequest(String requestMethod, String requestUrl, Map<String, String> requestHeaders, String requestBody) {
         Response resp = null;
 
+        System.out.println("Making request to: " + requestUrl + "\n");
         switch (requestMethod.toUpperCase()) {
             case "GET":
                 resp = given()

@@ -82,5 +82,6 @@ public class ExcelUtil {
         for (Map.Entry<Object,Object> entry : dataSource.entrySet()){
             System.setProperty(entry.getKey().toString(),entry.getValue().toString());
         }
+        System.out.println("Test Case: "+dataSource.get("Description")+"\n\n");
     }
 }
