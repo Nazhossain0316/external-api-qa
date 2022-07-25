@@ -27,6 +27,5 @@ test {
                 suites 'src/test/resources/testng.xml'
                 useDefaultListeners = true
                 outputDirectory = file("$projectDir/build/automationReport")
-
             }
 }

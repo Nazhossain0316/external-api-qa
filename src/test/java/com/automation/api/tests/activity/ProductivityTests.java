@@ -48,7 +48,6 @@ public class ProductivityTests extends TestBase {
         String equipmentTypeId = System.getProperty("equipmentTypeId");
         activityApiUrl = activityApiUrl.contains("{equipmentTypeId}") ? activityApiUrl.replace("{equipmentTypeId}", equipmentTypeId) : activityApiUrl;
 
-
         //Make Request
         Response response = Request.makeRequest("GET", activityApiUrl, requestHeaders, "");
 
@@ -133,6 +132,18 @@ public class ProductivityTests extends TestBase {
         String userId = System.getProperty("userId");
         activityRequestUrl = activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId) : activityRequestUrl;
 
+        //If equipmentId was created in the prerequisite step, it can be retrieved using System.getProperty("equipmentId")
+        String equipmentId = System.getProperty("equipmentId");
+        activityRequestUrl = activityRequestUrl.contains("{equipmentId}") ? activityRequestUrl.replace("{equipmentId}", equipmentId) : activityRequestUrl;
+
+        //If locationId was created in the prerequisite step, it can be retrieved using System.getProperty("equipmentId")
+        String locationId = System.getProperty("locationId");
+        activityRequestUrl = activityRequestUrl.contains("{locationId}") ? activityRequestUrl.replace("{locationId}", locationId) : activityRequestUrl;
+
+        //If equipmentTypeId was created in the prerequisite step, it can be retrieved using System.getProperty("equipmentId")
+        String equipmentTypeId = System.getProperty("equipmentTypeId");
+        activityRequestUrl = activityRequestUrl.contains("{equipmentTypeId}") ? activityRequestUrl.replace("{equipmentTypeId}", equipmentTypeId) : activityRequestUrl;
+
         Response response = Request.makeRequest("GET", activityRequestUrl, requestHeaders, "");
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
@@ -165,6 +176,18 @@ public class ProductivityTests extends TestBase {
         //If userId was created in the prerequisite step, it can be retrieved using System.getProperty("userId")
         String userId = System.getProperty("userId");
         activityRequestUrl = activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId) : activityRequestUrl;
+
+        //If equipmentId was created in the prerequisite step, it can be retrieved using System.getProperty("equipmentId")
+        String equipmentId = System.getProperty("equipmentId");
+        activityRequestUrl = activityRequestUrl.contains("{equipmentId}") ? activityRequestUrl.replace("{equipmentId}", equipmentId) : activityRequestUrl;
+
+        //If locationId was created in the prerequisite step, it can be retrieved using System.getProperty("equipmentId")
+        String locationId = System.getProperty("locationId");
+        activityRequestUrl = activityRequestUrl.contains("{locationId}") ? activityRequestUrl.replace("{locationId}", locationId) : activityRequestUrl;
+
+        //If equipmentTypeId was created in the prerequisite step, it can be retrieved using System.getProperty("equipmentId")
+        String equipmentTypeId = System.getProperty("equipmentTypeId");
+        activityRequestUrl = activityRequestUrl.contains("{equipmentTypeId}") ? activityRequestUrl.replace("{equipmentTypeId}", equipmentTypeId) : activityRequestUrl;
 
         Response response = Request.makeRequest("GET", activityRequestUrl, requestHeaders, "");
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
@@ -199,6 +222,18 @@ public class ProductivityTests extends TestBase {
         String userId = System.getProperty("userId");
         activityRequestUrl = activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId) : activityRequestUrl;
 
+        //If equipmentId was created in the prerequisite step, it can be retrieved using System.getProperty("equipmentId")
+        String equipmentId = System.getProperty("equipmentId");
+        activityRequestUrl = activityRequestUrl.contains("{equipmentId}") ? activityRequestUrl.replace("{equipmentId}", equipmentId) : activityRequestUrl;
+
+        //If locationId was created in the prerequisite step, it can be retrieved using System.getProperty("equipmentId")
+        String locationId = System.getProperty("locationId");
+        activityRequestUrl = activityRequestUrl.contains("{locationId}") ? activityRequestUrl.replace("{locationId}", locationId) : activityRequestUrl;
+
+        //If equipmentTypeId was created in the prerequisite step, it can be retrieved using System.getProperty("equipmentId")
+        String equipmentTypeId = System.getProperty("equipmentTypeId");
+        activityRequestUrl = activityRequestUrl.contains("{equipmentTypeId}") ? activityRequestUrl.replace("{equipmentTypeId}", equipmentTypeId) : activityRequestUrl;
+
         Response response = Request.makeRequest("GET", activityRequestUrl, requestHeaders, "");
         String expectedStatusCode = dataSource.get("ExpectedStatusCode").toString();
 
@@ -232,6 +267,19 @@ public class ProductivityTests extends TestBase {
         //If userId was created in the prerequisite step, it can be retrieved using System.getProperty("userId")
         String userId = System.getProperty("userId");
         activityRequestUrl = activityRequestUrl.contains("{userId}") ? activityRequestUrl.replace("{userId}", userId) : activityRequestUrl;
+
+        //If equipmentId was created in the prerequisite step, it can be retrieved using System.getProperty("equipmentId")
+        String equipmentId = System.getProperty("equipmentId");
+        activityRequestUrl = activityRequestUrl.contains("{equipmentId}") ? activityRequestUrl.replace("{equipmentId}", equipmentId) : activityRequestUrl;
+
+        //If locationId was created in the prerequisite step, it can be retrieved using System.getProperty("equipmentId")
+        String locationId = System.getProperty("locationId");
+        activityRequestUrl = activityRequestUrl.contains("{locationId}") ? activityRequestUrl.replace("{locationId}", locationId) : activityRequestUrl;
+
+        //If equipmentTypeId was created in the prerequisite step, it can be retrieved using System.getProperty("equipmentId")
+        String equipmentTypeId = System.getProperty("equipmentTypeId");
+        activityRequestUrl = activityRequestUrl.contains("{equipmentTypeId}") ? activityRequestUrl.replace("{equipmentTypeId}", equipmentTypeId) : activityRequestUrl;
+
 
         //Make Request
         Response response = Request.makeRequest("GET", activityRequestUrl, requestHeaders, "");

@@ -52,7 +52,7 @@ public class ImpactTests extends TestBase {
 
     //@Test(dataProvider = "impactsCommentsData")
     public void get_impacts_comments(Map<Object, Object> dataSource) {
-        //ToDo: Test Case work still remians. This test case require DB integration (which is currently pending)
+        //ToDo: Test Case work still remains. This test case require DB integration (which is currently pending)
         //Create System Properties using the values in the excel datasheet , Example "System.getProperty("ExpectedStatusCode")
         ExcelUtil.createSystemPropertiesFromDataSource(dataSource);
 
